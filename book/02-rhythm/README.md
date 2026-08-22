@@ -2,6 +2,17 @@
 
 > 학습 목표: BPM 숫자만 보는 습관에서 벗어나 Beat, Meter, Feel, Groove, Syncopation을 실제로 듣고 구분한다.
 
+## 공부 순서
+
+1. [Lesson 01 — Beat, Tempo, Meter](01-beat-tempo-meter.md)
+2. [Lesson 02 — Straight, Swing, Shuffle](02-straight-swing-shuffle.md)
+3. [Lesson 03 — 강박, 약박, Syncopation, Pickup](03-accent-syncopation-pickup.md)
+4. [Lesson 04 — Groove와 파트 간 상호작용](04-groove-interaction.md)
+5. [Lesson 05 — Rhythm Pattern과 Section Energy](05-pattern-section-energy.md)
+6. [Lesson 06 — DohaStudio로 Rhythm 공부하기](06-dohastudio-rhythm-study.md)
+
+---
+
 ## 1. Rhythm은 왜 먼저 배워야 하는가
 
 같은 멜로디와 코드라도 리듬이 달라지면 장르와 인상이 완전히 바뀐다. Rhythm은 단순한 드럼 패턴이 아니라 음이 언제 시작되고 얼마나 유지되며 어디에 강세가 놓이는지에 관한 시간 구조다.
@@ -25,8 +36,6 @@ Beat가 어떤 묶음으로 반복되는지 나타낸다. 4/4, 3/4, 6/8 등이 �
 ## 3. Straight, Swing, Shuffle
 
 Straight는 subdivision이 비교적 균등하게 나뉘는 느낌이다. Swing/Shuffle은 앞뒤 길이가 불균등해져 튕기는 움직임이 생긴다.
-
-직접 손뼉으로 다음을 비교한다.
 
 ```text
 Straight: 1 & 2 & 3 & 4 &
@@ -58,7 +67,7 @@ Phrase가 첫 강박보다 먼저 시작되는 경우다. 보컬이 다음 마�
 
 ## 7. Groove
 
-Groove는 BPM 한 숫자로 설명할 수 없다. 다음 요소가 같이 작동한다.
+Groove는 BPM 한 숫자로 설명할 수 없다.
 
 ```text
 Groove = subdivision
@@ -76,18 +85,20 @@ Groove = subdivision
 
 리듬 패턴은 일정한 규칙을 반복하면서 작은 변화를 주는 구조다.
 
-예를 들어 4마디 Drum Pattern을 만든 뒤:
+```text
+Bar 1: 기본 패턴
+Bar 2: 기본 패턴
+Bar 3: 기본 패턴
+Bar 4: Fill 또는 Accent 변화
+```
 
-- 1~3마디: 기본 패턴 유지
-- 4마디: Fill 추가
-
-처럼 반복과 변화의 균형을 만든다.
+반복과 변화의 균형을 들으면서 Section별 Rhythm density가 어떻게 Energy Curve를 만드는지 확인한다.
 
 ## 9. 장르별 듣기 포인트
 
 - K-pop: 여러 장르의 리듬 문법이 Section별로 바뀔 수 있다.
 - R&B: 보컬과 드럼의 미세한 앞뒤 배치, Syncopation에 집중한다.
-- Hip-hop: Kick/Snare보다 Hi-hat subdivision 변화도 중요하다.
+- Hip-hop: Kick/Snare뿐 아니라 Hi-hat subdivision 변화도 중요하다.
 - EDM: Build-up에서 subdivision을 촘촘하게 만들어 에너지를 올리는 경우가 많다.
 - Ballad: 느린 Tempo에서도 Vocal rhythm과 phrase timing이 곡의 긴장을 만든다.
 
@@ -101,7 +112,7 @@ Version B: Syncopated
 Version C: Shuffle/Swing
 ```
 
-멜로디 음높이는 같게 유지한다. 무엇이 달라지는지 기록한다.
+멜로디 음높이는 같게 유지하고 무엇이 달라지는지 기록한다.
 
 ## 11. DohaStudio와 연결
 
@@ -141,10 +152,24 @@ Choice: B
 Reason: stronger syncopation and section lift
 ```
 
-## 13. 이 장을 끝냈다면
+## 13. Part 02 최종 산출물
+
+```text
+01-bpm-meter-analysis.md
+02-straight-swing-comparison.md
+03-syncopation-pickup-notes.md
+04-groove-part-interaction.md
+05-section-rhythm-map.md
+06-candidate-rhythm-review.md
+07-product-gap-notes.md
+```
+
+## 14. 이 Part를 끝냈다면
 
 - Tempo와 Groove를 구분해서 설명할 수 있다.
 - Straight와 Swing/Shuffle 차이를 들을 수 있다.
-- Syncopation을 찾아낼 수 있다.
-- 리듬만 바꿔 같은 음악 아이디어의 인상을 변형할 수 있다.
+- Syncopation과 Pickup을 찾아낼 수 있다.
+- Kick/Bass/Hi-hat/Vocal의 상호작용을 따로 들을 수 있다.
+- Section별 Rhythm density 변화를 분석할 수 있다.
 - 생성 결과를 '좋다/별로다'가 아니라 Rhythm 관점으로 평가할 수 있다.
+- 음악적 문제를 DohaStudio의 향후 편집 요구사항으로 바꿔 기록할 수 있다.
