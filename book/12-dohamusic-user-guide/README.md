@@ -1,112 +1,111 @@
 # Part 12 — 현재 DohaMusic 사용법
 
-> 이 문서는 공부용 사용 가이드다. 기준은 2026-08-22 `DohaMusic/develop` README이며 실제 UI/API가 변경되면 원본 저장소를 다시 확인해 갱신한다.
+> 공부용 사용자 가이드. 기준은 2026-08-23 `DohaMusic/develop` README와 Frontend Overview이며 UI/API 변경 시 원본 저장소를 다시 확인한다.
 
-## 1. 로컬 실행
+## 공부 순서
 
-Backend:
+1. [Lesson 01 — 로컬 실행과 화면 구조](lesson-01-local-run-navigation.md)
+2. [Lesson 02 — Studio 생성 Workflow](lesson-02-studio-workflow.md)
+3. [Lesson 03 — Lyrics Lab과 Voice](lesson-03-lyrics-voice.md)
+4. [Lesson 04 — Generation과 Result](lesson-04-generation-result.md)
+5. [Lesson 05 — History, Projects, Composition Read Workspace](lesson-05-history-projects-workspace.md)
+6. [Lesson 06 — 음악 공부 반복 루프와 문서 갱신법](lesson-06-study-loop-and-update.md)
 
-```powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-python -m pip install -e ".[dev]"
-python -m alembic -c backend/alembic.ini upgrade head
-python -m uvicorn backend.main:app --reload
+## 현재 사용자 흐름
+
+```text
+Studio
+→ Lyrics
+→ Voice
+→ Review
+→ Generation
+→ Result
+→ History
+→ Project
+→ Composition Read Workspace
+→ Listening / Study Notes
 ```
 
-Frontend:
+현재 Frontend route는 `/`, `/studio`, `/lyrics`, `/voice`, `/generation/[jobId]`, `/result/[jobId]`, `/history`, `/projects`, `/projects/[id]`, `/settings`, `/about`이다. Generation/Result는 Job context route이며 주 탐색 메뉴는 아니다.
 
-```powershell
-Set-Location frontend
-npm ci
-npm run dev
-```
+## 현재 사용 가능한 핵심 범위
 
-기본 확인 위치:
+- Studio 생성 Workflow와 K-POP structured options
+- Lyrics 생성·검증·revision
+- 동의된 Voice Profile WAV upload/list/get/delete/선택
+- Pipeline Job 상태, cancel/retry
+- Result WAV 재생/download
+- Quality/Tempo/Hook 관련 안전한 분석 정보가 존재하는 경우 표시
+- History와 Project
+- 선택된 CompositionSnapshot의 읽기 전용 Timeline/Track lane
+- Play/Pause, seek, horizontal scroll/zoom, richer playhead foundation
 
-- Backend API docs: `http://127.0.0.1:8000/docs`
-- Health: `http://127.0.0.1:8000/health`
-- Frontend: `http://localhost:3000`
+## 현재 사용법으로 쓰면 안 되는 기능
 
-## 2. 화면을 공부 순서와 연결하기
+아래는 실제 최신 구현 확인 전까지 `TARGET` 또는 `FOUNDATION`이다.
 
-### `/studio`
-
-음악 제작 진입점으로 본다. 단순히 버튼 위치를 외우지 않고 `요청 → Job → 결과 → Project/Asset` 흐름을 추적한다.
-
-### `/lyrics`
-
-가사 생성/편집 흐름을 공부한다. Part 05의 Concept, Story, Syllable, Prosody와 비교하면서 현재 UI가 무엇을 표현하고 무엇을 아직 표현하지 않는지 기록한다.
-
-### `/voice`
-
-Voice Enrollment와 vocal workflow를 공부한다. Enrollment Sample과 실제 Recording Take, Training Dataset을 같은 것으로 취급하지 않는다.
-
-### `/generation/[jobId]`
-
-비동기 생성 Job의 상태 변화를 확인한다. 생성 AI를 '한 번 호출하면 파일이 나오는 기능'으로만 이해하지 않고 lifecycle과 retry/cancel을 함께 공부한다.
-
-### `/result/[jobId]`
-
-생성 결과와 WAV를 확인하고 청취 평가를 남기는 위치로 활용한다.
-
-### `/history`
-
-생성 이력과 반복 실험을 비교한다. 실패한 결과도 삭제 대상으로만 보지 않고 prompt/condition/선택 기준 학습 자료로 기록한다.
-
-### `/projects` / `/projects/[id]`
-
-Project 중심 제작 구조를 공부한다. Asset, AssetVersion, Artifact, CompositionSnapshot의 차이를 실제 화면과 연결한다.
-
-## 3. 현재 Composition Read Workspace에서 볼 것
-
-현재 기준으로 선택된 CompositionSnapshot에는 읽기 전용 Timeline, snapshot-local Track lane, 실제 media metadata 기반 duration/playhead, play/pause/seek, horizontal scroll/zoom과 Track 선택 기반이 있다.
-
-학습할 때는 다음을 확인한다.
-
-- 어떤 Snapshot을 보고 있는가?
-- 어떤 Track lane이 있는가?
-- playback source는 무엇인가?
-- duration은 어디에서 왔는가?
-- playhead와 seek가 실제 오디오 시간과 어떻게 대응하는가?
-
-Canonical playback source가 없으면 재생을 억지로 허용하지 않는 fail-closed 동작도 확인한다.
-
-## 4. 아직 사용법으로 작성하면 안 되는 기능
-
-다음은 목표/설계 또는 미구현 영역이다.
-
-- Track/Clip의 완전한 mutable editing
-- Split / Trim / Move / Copy / Delete
-- Fade / Gain / Loop / Undo / Redo
-- 완성 Mixer의 Volume / Pan / Mute / Solo
-- MIDI Track
-- Piano Roll
-- SoundFont engine
+- mutable Track/Clip 완전 편집
+- Split/Trim/Move/Copy/Delete
+- Fade/Gain/Loop/Undo/Redo
+- 완성형 Mixer
+- MIDI Track/Piano Roll
+- SoundFont engine integration
 - Reference Panel workflow
 - 실제 DohaLM/DohaAudio production transport
 - 완성형 Composition Evaluation/QA
+- Candidate A/B 전용 DAW UI
 
-책에서 이 기능을 설명할 때는 `TARGET` 또는 `FOUNDATION`으로 표시하고 현재 사용 절차를 만들어내지 않는다.
+현재 Player waveform/seek와 Pipeline의 단계 표현을 완성형 DAW Timeline/Mixer의 구현 증거로 취급하지 않는다.
 
-## 5. 기능을 사용할 때 남길 공부 기록
+## 프로그램을 공부에 쓰는 원칙
 
-각 실습마다 다음을 기록한다.
+사용법을 외우는 것이 목적이 아니다. 매 세션에서 다음을 연결한다.
 
 ```text
-Date:
-Project:
-Goal:
-Music concept studied:
-Screen/API used:
-Input:
-Output:
-What I heard:
-What worked:
-What sounded wrong:
-What I changed:
-Current product limitation:
-Possible future feature:
+Music theory
+→ Intent
+→ Program input
+→ Generated result
+→ Listening diagnosis
+→ Project/Timeline observation
+→ Human edit or next generation
+→ Product gap
 ```
 
-목표는 프로그램 사용법을 외우는 것이 아니라 **내가 만든 프로그램을 이용해 음악적 판단을 반복 훈련하는 것**이다.
+예를 들어 Chorus가 약하다면 먼저 Melody Range, Harmony Lift, Groove, Arrangement Density 같은 음악적 원인을 찾고 그 다음 `부분 재생성 없음`, `MIDI note editing 없음` 같은 제품 Gap을 분리한다.
+
+## 학습 기록
+
+```text
+study/dohamusic-user-guide/
+├─ 01-local-run-navigation.md
+├─ 02-studio-session.md
+├─ 03-lyrics-voice-session.md
+├─ 04-generation-result-review.md
+├─ 05-history-candidate-comparison.md
+├─ 06-project-timeline-study.md
+├─ 07-full-study-session.md
+└─ 08-product-gap-notes.md
+```
+
+## 문서 갱신 Authority
+
+CURRENT 사용법을 바꿀 때는 다음 순서로 원본을 확인한다.
+
+1. DohaMusic `develop` README
+2. ROADMAP / AI-native DAW product direction
+3. Frontend Overview와 실제 `frontend/app/`
+4. 관련 API/domain 문서
+5. 구현 코드와 tests가 필요한 경우 추가 확인
+
+DohaMusicBook은 공부용 문서이지 원본 제품 Roadmap이나 Architecture Authority를 대체하지 않는다.
+
+## Part 12 완료 기준
+
+- 로컬 Backend/Frontend를 직접 실행한다.
+- Studio→Result까지 한 번의 생성 흐름을 수행한다.
+- Lyrics를 사람이 수정한다.
+- Voice Enrollment와 Training/Recording을 구분한다.
+- History에서 후보를 비교한다.
+- Project의 Composition Read Workspace를 사용해 시간 위치를 분석한다.
+- 음악 문제와 제품 문제를 분리한 Product Gap을 남긴다.
