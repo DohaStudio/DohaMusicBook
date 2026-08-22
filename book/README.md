@@ -62,6 +62,13 @@ Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Mo
 ### [Part 15 — Collaboration & Delivery](15-collaboration-delivery/README.md)
 협업 Brief, Recording Take 관리, Mix/Master Handoff, Stem/Deliverable, Credit·Rights·Version 관리까지 실제 작업 전달 절차를 배운다.
 
+## Appendix — 작업 환경
+
+### [Music Production Setup](appendix-production-setup/README.md)
+PC 성능, Storage, Audio Interface, Driver/Buffer, Monitoring, Recording Setup, DAW/Plugin 관리, Backup/Versioning을 실제 음악 제작 환경과 연결한다.
+
+이 Appendix는 Part 08~09를 공부하기 전 또는 실제 장비/Plugin 문제가 생겼을 때 참고한다.
+
 ## 추천 학습 방식
 
 처음 공부할 때는 `Part 00 → 10`을 음악 제작 기초로 진행하고, DohaStudio 개발 중에는 `Part 11 → 12`를 병행한다. 이후 `Part 13 → 15`에서 완성·반복 훈련·협업 전달까지 연결한다.
@@ -72,6 +79,7 @@ Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Mo
 13     한 곡 완성
 14     반복 훈련
 15     실제 협업과 전달
+Appendix 작업 환경/장비/파일 관리 참고
 ```
 
 ## 한 Chapter의 표준 형식
