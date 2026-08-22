@@ -2,144 +2,67 @@
 
 > 학습 목표: 작곡을 Melody+Chord로만 보지 않고 Instrument Role, Density, Register, Timbre, Dynamics, Stereo Image까지 포함한 전체 사운드 설계로 이해한다.
 
-## 1. Arrangement란 무엇인가
+## 공부 순서
 
-Arrangement는 어떤 악기가 언제, 어떤 음역에서, 어떤 리듬과 역할로 연주되는지를 설계하는 과정이다. 좋은 멜로디와 코드가 있어도 편곡이 평평하면 곡의 Section 대비와 감정선이 약해질 수 있다.
+1. [Lesson 01 — Instrument Role](lesson-01-instrument-role.md)
+2. [Lesson 02 — Density와 Layering](lesson-02-density-layering.md)
+3. [Lesson 03 — Register와 Timbre](lesson-03-register-timbre.md)
+4. [Lesson 04 — Dynamics와 Stereo Image](lesson-04-dynamics-stereo.md)
+5. [Lesson 05 — Virtual Instrument, Sample, Synth, SoundFont](lesson-05-virtual-instruments-samples-soundfont.md)
+6. [Lesson 06 — Section Arrangement와 DohaStudio 실습](lesson-06-section-arrangement-dohastudio.md)
 
-## 2. Instrument Role
-
-악기 이름보다 먼저 역할을 생각한다.
-
-- Rhythm: Drum, Percussion
-- Low foundation: Bass
-- Harmony: Piano, Guitar, Pad
-- Lead: Vocal, Synth Lead, Guitar Lead
-- Texture: Pad, Noise, Ambience
-- Transition: Risers, Impacts, Reverse FX
-
-한 악기가 여러 역할을 할 수 있지만, 동시에 모든 악기가 같은 역할을 하면 Mix가 복잡해진다.
-
-## 3. Density
-
-Density는 한 순간에 얼마나 많은 정보가 존재하는지다. Verse는 얇고 Chorus는 두껍게 만드는 방식이 대표적이지만 장르에 따라 반대도 가능하다.
+## 이 Part에서 익힐 핵심
 
 ```text
-Verse: kick + bass + sparse keys + vocal
-Pre:   add percussion + pad
-Chorus:add full drums + layered synth + doubles
+Instrument Role
+    ↓
+Density / Layering
+    ↓
+Register / Timbre
+    ↓
+Dynamics / Stereo Image
+    ↓
+Sound Source
+(Virtual Instrument / Sample / Synth / SoundFont)
+    ↓
+Section Arrangement Map
+    ↓
+Candidate Arrangement Review
 ```
 
-## 4. Register
+편곡은 악기를 많이 넣는 작업이 아니다. 곡의 목적과 Section 역할에 맞게 **무엇을 넣고, 무엇을 빼고, 어떤 음역과 질감과 공간에 놓을지** 결정하는 작업이다.
 
-같은 코드라도 어느 음역에서 연주하느냐에 따라 충돌이 달라진다. Bass와 Piano 왼손, Low Pad가 모두 같은 음역을 차지하면 뭉칠 수 있다.
+## 직접 만들 최종 결과
 
-편곡 시 다음을 본다.
-
-- Low: weight, foundation
-- Mid: body, most harmonic information
-- High: brightness, air, detail
-
-## 5. Timbre
-
-Timbre는 같은 음높이라도 악기마다 다른 질감을 만드는 요소다. Acoustic Piano, FM Bell, Distorted Guitar, Analog Pad는 같은 C Major chord를 연주해도 전혀 다른 인상을 만든다.
-
-## 6. Layering
-
-Layering은 같은 역할을 여러 소리로 겹쳐 하나의 더 큰 음색을 만드는 방법이다. 무조건 많이 겹치는 것이 아니라 각 Layer가 어떤 역할을 추가하는지 명확해야 한다.
-
-예:
+Part 06을 끝낼 때 `study/arrangement/`에 다음 기록을 만들 수 있다.
 
 ```text
-Kick layer A: low-end body
-Kick layer B: click/attack
+01-instrument-role-map.md
+02-density-layering-analysis.md
+03-register-timbre-notes.md
+04-dynamics-stereo-map.md
+05-sound-source-license-log.md
+06-section-arrangement-plan.md
+07-candidate-arrangement-review.md
+08-product-gap-notes.md
 ```
 
-## 7. Dynamics
-
-Dynamics는 단순한 Volume이 아니다. 연주 강도, Section 에너지, 악기 출입, Automation까지 포함한다. 좋은 곡은 시간에 따라 밀도와 강도가 변한다.
-
-## 8. Stereo Image
-
-좌우 배치는 공간을 만든다.
-
-- Center: Kick, Snare, Bass, Lead Vocal 등 핵심 요소가 자주 위치
-- Side: Guitar, Pad, Harmony Vocal 등
-
-규칙이 절대적인 것은 아니지만 핵심 정보와 공간감을 구분하는 출발점이 된다.
-
-## 9. Virtual Instrument와 Sample
-
-### Virtual Instrument
-
-MIDI 입력을 받아 Piano, Drum, Synth, Orchestra 등 소리를 생성한다.
-
-### Sample
-
-이미 녹음된 Audio 조각이다. Drum one-shot, loop, FX, vocal chop 등으로 사용할 수 있다.
-
-### SoundFont
-
-여러 악기 샘플과 매핑 정보를 묶은 포맷 중 하나다. 학습용/프로토타입 용도로 유용하지만 상업적 사용 시 각 SoundFont의 실제 라이선스를 확인한다.
-
-## 10. 듣기 실습
-
-Chorus를 한 번은 전체로 듣고, 다음에는 특정 역할만 따라간다.
-
-```text
-Pass 1: drums only
-Pass 2: bass only
-Pass 3: harmony instruments
-Pass 4: lead/vocal
-Pass 5: FX/transitions
-```
-
-각 요소가 언제 들어오고 나가는지 기록한다.
-
-## 11. 직접 편곡 실습
-
-8마디 Chorus를 세 단계로 만든다.
-
-```text
-A: piano + vocal
-B: add bass + drums
-C: add pad + hook layer + transition FX
-```
-
-각 단계에서 무엇이 좋아지고 무엇이 복잡해지는지 비교한다.
-
-## 12. DohaStudio와 연결
+## DohaStudio 연결 원칙
 
 ### CURRENT
-
-DohaMusic은 Project/Composition/Artifact 구조와 읽기 전용 Track lane, WAV playback 기반을 제공한다. 완전한 Mixer/Clip editing은 아직 목표 영역이다.
-
-### DohaAudio
-
-DohaAudio는 장기적으로 Music Generation, Stem Separation, Music Analysis 등을 담당한다. 현재는 Runtime/Foundation과 Dataset/Training governance 기반이 중심이고 실제 생성·분리 모델은 미구현 상태를 유지한다.
+현재 DohaMusic은 Project/Composition/Artifact, 읽기 전용 Track lane, WAV playback/timeline을 이용해 생성 결과를 듣고 Section별 역할과 밀도를 분석하는 데 활용한다.
 
 ### TARGET
+완성형 Track/Clip 편집, Mixer, Automation, MIDI/Piano Roll, SoundFont engine, Production Stem Separation은 현재 사용 가능한 기능처럼 설명하지 않는다. 향후 `Track.role`, `instrument`, `register`, `timbre`, `Clip.start/end`, `gain`, `pan`, `Section.density`, `Automation` 등의 정보가 편곡 도메인과 연결될 수 있다.
 
-편곡 기능이 성숙하면 다음과 같은 정보가 중요하다.
+## Part 06 완료 기준
 
-```text
-Track.role
-Track.instrument
-Track.register
-Clip.start/end
-Clip.gain
-Clip.pan
-Section.density
-Automation
-```
-
-## 13. 현재 프로그램으로 공부하기
-
-Project playback을 사용해 Section별 Instrument Density를 수동 기록한다. Stem Separation이 실제 연결되기 전까지는 귀로 구분하고, 사용 가능한 외부 DAW 분석을 병행해도 된다.
-
-## 14. 이 장을 끝냈다면
-
-- 악기를 이름이 아니라 역할로 볼 수 있다.
-- Density와 Register 충돌을 설명할 수 있다.
-- Timbre와 Layering의 차이를 이해한다.
-- Stereo Image와 Dynamics를 편곡 요소로 인식한다.
-- Virtual Instrument, Sample, SoundFont의 역할과 라이선스 주의점을 이해한다.
+- 악기를 이름보다 역할로 분류한다.
+- Section별 Density 변화를 설명한다.
+- Layering의 목적을 설명한다.
+- Register 충돌을 찾는다.
+- Timbre Contrast를 설계한다.
+- Dynamics와 Stereo Image를 편곡 요소로 듣는다.
+- Virtual Instrument/Sample/Synth/SoundFont를 구분한다.
+- 사용한 음원 소스의 라이선스를 기록한다.
+- AI Candidate의 편곡을 음악 용어로 비교한다.
