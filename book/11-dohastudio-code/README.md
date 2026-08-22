@@ -2,7 +2,16 @@
 
 > 기준 확인: 2026-08-22, 각 저장소 `develop` README. 구현 상태는 계속 변하므로 Chapter 작성 시 원본 저장소를 다시 확인한다.
 
-## 1. 전체 관계
+## 공부 순서
+
+1. [Lesson 01 — Repository Map](lesson-01-repository-map.md)
+2. [Lesson 02 — DohaMusic Domain Flow](lesson-02-dohamusic-domain-flow.md)
+3. [Lesson 03 — DohaLM Provider](lesson-03-dohalm-provider.md)
+4. [Lesson 04 — DohaAudio Provider](lesson-04-dohaaudio-provider.md)
+5. [Lesson 05 — DohaVocal Provider](lesson-05-dohavocal-provider.md)
+6. [Lesson 06 — End-to-End Code Trace](lesson-06-end-to-end-code-trace.md)
+
+## 전체 관계
 
 ```text
 User
@@ -17,101 +26,66 @@ AssetVersion / Artifact / CompositionSnapshot / 사용자 선택
 
 핵심 규칙은 Provider끼리 직접 호출하지 않는 것이다. 사용자 요청과 Project 상태, Job, Artifact lineage, 최종 선택은 DohaMusic이 관리한다.
 
-## 2. DohaMusic에서 공부할 것
+## 현재 코드 상태를 읽는 기준
 
-현재 `develop` README 기준으로 DohaMusic은 AI-native DAW를 목표로 하며 다음 기반이 존재한다.
+### DohaMusic
+현재 `develop` 기준 Composition Read Workspace, Timeline Playback, Master/Mix Waveform·Playhead Foundation, Workspace/Project/AssetVersion/Artifact/CompositionSnapshot/Job 기반이 있다. WorkingComposition Track/Clip schema/API와 완성형 편집 UI, MIDI/Piano Roll, SoundFont integration, 실제 DohaLM·DohaAudio production transport 등은 CURRENT로 쓰지 않는다.
 
-- Workspace / MusicProject / ProjectAsset
-- Asset / AssetVersion / Artifact
-- CompositionSnapshot / Job
-- Composition Read Workspace
-- Timeline Playback
-- Master/Mix Waveform와 Playhead
-- 생성·Stem·Voice Conversion·Pipeline·Lyrics legacy flow
-- WAV 재생·다운로드
-- Pipeline cancel/retry
-- Guided Voice Enrollment
-- K-POP structured options와 WAV quality·tempo·hook 분석
+### DohaLM
+재사용 가능한 LLM 모델·추론 Provider다. REST/Streaming MVP와 Runtime 코드 이력이 있어도 승인된 model artifact 및 DohaMusic production integration 상태를 별도로 확인한다. Audio/MIDI 생성은 책임 범위가 아니다.
 
-### 아직 CURRENT가 아닌 것
+### DohaAudio
+Runtime/Provider API, Job lifecycle/persistence, Dataset admission/governance, training preflight/dry-run foundation이 존재한다. 실제 Music Generation·Stem·Analysis production model과 실제 Training은 완료 상태로 취급하지 않는다.
 
-- mutable WorkingComposition의 실제 Track/Clip schema/API와 편집 UI
-- Split/Trim/Move/Copy/Delete, Fade/Gain, Mixer, Undo/Redo의 완성형 DAW 편집
-- MIDI Track / Piano Roll
-- SoundFont engine integration
-- 실제 DohaLM·DohaAudio transport
-- Reference Analysis workflow/panel
-- Composition Evaluation 완성곡 QA
-- LearningCandidate → Dataset/Training 실제 연결
+### DohaVocal
+Provider API, Vocal Job 계약, lifecycle, metadata-only Fake Runtime foundation이 존재한다. 실제 Singing Voice, Voice Conversion, Vocal Correction production model은 미구현 상태다.
 
-따라서 책에서는 `목표 기능`과 `지금 직접 실행 가능한 기능`을 별도 박스로 작성한다.
+## 코드 공부 루프
 
-## 3. DohaLM에서 공부할 것
+```text
+음악 개념 이해
+→ 저장소 owner 찾기
+→ authority 문서 확인
+→ API/router entry 찾기
+→ service/orchestrator
+→ domain identity
+→ persistence
+→ provider transport/runtime
+→ result ingestion
+→ frontend consumer
+→ tests
+→ 음악 품질 평가
+→ product gap 기록
+```
 
-DohaLM은 음악 앱 자체가 아니라 재사용 가능한 LLM Provider다.
+코드를 읽는 목적은 구현 세부를 외우는 것이 아니라 `음악 개념이 어떤 identity와 lifecycle로 시스템에 보존되는가`를 이해하는 것이다.
 
-음악 공부와 연결할 때는 다음 질문으로 읽는다.
-
-- Music Intent를 언어로 어떻게 표현할까?
-- 가사 초안과 revision을 어떻게 구조화할까?
-- Reference 분석 결과를 prompt/condition으로 어떻게 번역할까?
-- LLM의 결과를 바로 정답으로 쓰지 않고 어떤 검토 단계를 둘까?
-
-DohaLM은 오디오/MIDI 생성을 직접 담당하지 않는다.
-
-## 4. DohaAudio에서 공부할 것
-
-DohaAudio의 목표 책임은 다음과 연결된다.
-
-- Music / Instrumental Generation
-- Stem Separation
-- BPM / Key / Music Structure / Audio Quality Analysis
-- Dataset / Training / Fine-tuning / Evaluation
-- Model Manifest / Runtime
-
-현재는 Runtime과 Dataset/Training 전 단계의 governance foundation이 중심이며 실제 Music Generation 모델과 실제 Training은 아직 구현된 것으로 취급하지 않는다.
-
-음악 Chapter에서는 `BPM`, `Key`, `Structure`, `Audio Quality`, `Stem`을 배운 뒤 이 Provider가 왜 해당 정보를 필요로 하는지 연결한다.
-
-## 5. DohaVocal에서 공부할 것
-
-목표 책임:
-
-- Singing Voice Generation
-- Voice Conversion
-- Pitch / Timing Correction
-- Beat Alignment
-- Noise/Breath/Silence cleanup
-- Vocal normalization/enhancement/quality analysis
-
-현재는 Provider API와 metadata-only Fake Runtime foundation이 중심이다. 실제 singing/VC/correction 모델은 미구현이다.
-
-특히 다음 엔티티를 혼동하지 않는다.
-
-- Voice Enrollment Sample
-- Recording Take
-- Vocal Training Dataset
-- AI Generated Vocal
-- Voice Converted Vocal
-- Processed Vocal Asset
-- Final Selected Vocal
-
-## 6. 음악 개념에서 코드로 이동하는 방법
-
-예: `Melody`를 공부했다면 다음 순서로 코드를 읽는다.
-
-1. 음악적으로 Melody와 Motif가 무엇인지 이해한다.
-2. 현재 DohaMusic이 Melody를 어떤 입력/metadata/domain으로 표현하는지 찾는다.
-3. 생성 요청이 어떤 Job으로 전달되는지 확인한다.
-4. Provider 결과가 어떤 Artifact/AssetVersion으로 돌아오는지 확인한다.
-5. 사용자가 무엇을 선택하고 CompositionSnapshot에 무엇이 남는지 확인한다.
-6. 표현이 부족하면 `학습 노트`에 gap을 기록하고 실제 제품 요구사항과 분리한다.
-
-## 7. 상태 표기 규칙
+## 상태 표기 규칙
 
 - `CURRENT` — 현재 기준 브랜치에서 실제 확인한 기능
 - `FOUNDATION` — 계약/도메인/runtime 골격은 있으나 실제 모델·payload·UI가 완성되지 않은 기능
 - `TARGET` — 제품 방향에 있으나 아직 사용할 수 없는 기능
 - `STUDY` — 책에서 배우지만 아직 DohaStudio 구현과 직접 연결되지 않은 음악 지식
 
-이 표기를 모든 프로그램 관련 Chapter에서 사용한다.
+## 최종 학습 기록
+
+```text
+study/code-trace/
+├─ 01-feature-definition.md
+├─ 02-repository-ownership.md
+├─ 03-request-flow.md
+├─ 04-domain-identity-map.md
+├─ 05-provider-status.md
+├─ 06-artifact-lineage.md
+├─ 07-music-quality-review.md
+└─ 08-product-gaps.md
+```
+
+## Part 11 완료 기준
+
+- 네 저장소의 책임과 금지 경계를 설명한다.
+- DohaMusic의 Project/Job/Artifact/Composition 흐름을 추적한다.
+- DohaLM의 언어 작업과 Audio/MIDI 생성을 구분한다.
+- DohaAudio의 Foundation과 실제 music model을 구분한다.
+- DohaVocal의 보컬 엔티티와 derived lineage를 구분한다.
+- 실제 음악 요청 하나를 end-to-end로 코드/도메인/권리/사용자 선택까지 추적한다.
