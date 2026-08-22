@@ -1,161 +1,76 @@
 # Part 09 — Audio Production: 녹음에서 Mix와 Master까지
 
-> 학습 목표: 작곡 이후의 Audio Editing, Mixing, Mastering을 구분하고 각 단계의 목적을 이해한다.
+> 학습 목표: 작곡 이후의 Audio Editing, Mixing, Mastering을 구분하고 실제 소리를 수정한 이유를 귀와 기록으로 설명한다.
 
-## 1. Sample Rate와 Bit Depth
+## 공부 순서
 
-Sample Rate는 초당 얼마나 자주 신호를 샘플링하는지, Bit Depth는 각 샘플의 정밀도와 다이내믹 범위에 관련된다. 실무에서는 프로젝트/배포 목적에 맞는 규격을 일관되게 유지하는 것이 중요하다.
+1. [Lesson 01 — Digital Audio와 Editing](lesson-01-digital-audio-editing.md)
+2. [Lesson 02 — Gain, Pan, EQ](lesson-02-gain-pan-eq.md)
+3. [Lesson 03 — Compression과 Dynamics](lesson-03-compression-dynamics.md)
+4. [Lesson 04 — Reverb, Delay, Stereo, Automation, Bus](lesson-04-space-automation-bus.md)
+5. [Lesson 05 — Mixing, Mastering, Reference Track](lesson-05-mixing-mastering-reference.md)
+6. [Lesson 06 — DohaStudio Audio Production Workflow](lesson-06-dohastudio-audio-workflow.md)
 
-공부할 때는 숫자를 외우기보다 다음을 구분한다.
-
-- 녹음/작업 포맷
-- 최종 배포 포맷
-- 파일 크기
-- 변환 시점
-
-## 2. WAV와 손실 압축
-
-WAV는 일반적으로 무손실 PCM 작업 파일로 널리 사용된다. MP3/AAC 같은 손실 압축은 배포/미리듣기에 유용하지만 Mix/Master 전달용 원본으로는 보통 WAV가 적합하다.
-
-## 3. Editing
-
-Mixing 전에 Audio 자체를 정리한다.
-
-- Trim
-- Fade In/Out
-- Silence cleanup
-- Timing alignment
-- Pitch correction
-- Comping
-
-편집과 믹싱을 섞어 생각하지 않는다. 먼저 불필요한 구간과 명백한 타이밍 문제를 정리한다.
-
-## 4. Gain과 Headroom
-
-Mixing 시작 시 각 Track의 레벨을 적절히 조절해 여유 공간을 만든다. Fader만으로 모든 문제를 해결하려 하지 않고 입력 레벨과 Gain staging을 확인한다.
-
-## 5. EQ
-
-EQ는 주파수 밸런스를 조정한다.
-
-기본적으로 다음 질문을 한다.
-
-- 불필요한 저역이 있는가?
-- 중요한 악기가 서로 같은 대역을 차지하는가?
-- 너무 거칠거나 답답한 영역이 있는가?
-- 문제를 해결하기 위한 EQ인가, 취향을 위한 EQ인가?
-
-주파수 숫자를 공식처럼 외우지 않고 실제 소리를 들어가며 판단한다.
-
-## 6. Compression
-
-Compressor는 다이내믹을 조절한다. 핵심 파라미터는 Threshold, Ratio, Attack, Release, Makeup Gain 등이다.
-
-학습할 때는 다음을 귀로 확인한다.
-
-- Peak가 줄어드는가?
-- Sustain이 늘어나는가?
-- Attack이 살아 있는가?
-- Pumping이 생기는가?
-
-## 7. Reverb와 Delay
-
-Reverb는 공간감을, Delay는 반복을 만든다. 두 Effect 모두 많이 사용할수록 좋은 것이 아니다. Front/Back depth와 곡의 장르에 맞는 공간을 만드는 것이 목적이다.
-
-## 8. Panning과 Stereo Image
-
-Panning은 좌우 위치를 정하고 Stereo processing은 폭과 공간감을 조절한다. Mono compatibility도 중요하므로 넓게 들린다는 이유만으로 무조건 확장하지 않는다.
-
-## 9. Automation
-
-곡 전체에서 동일한 설정을 유지하지 않고 시간에 따라 Volume, Pan, Effect amount 등을 변화시킨다. Automation은 편곡과 Mix를 연결하는 중요한 도구다.
-
-## 10. Bus와 Group Processing
-
-비슷한 Track을 Group/Bus로 묶어 공통 처리를 할 수 있다.
+## 이 Part의 전체 흐름
 
 ```text
-Drum Tracks → Drum Bus
-Backing Vocals → Vocal Bus
-All Tracks → Mix Bus
+Source Audio
+→ Editing
+→ Gain / Pan
+→ EQ
+→ Compression
+→ Reverb / Delay
+→ Automation / Bus
+→ Mix
+→ Master
+→ Reference / Translation Review
+→ Final Export
 ```
 
-개별 Track 처리와 Bus 처리를 구분해 듣는다.
+Plugin을 많이 사용하는 것이 목표가 아니다. 매 처리마다 `문제 → 판단 → 변경 → A/B 결과`를 기록한다.
 
-## 11. Mastering
+## 핵심 원칙
 
-Mastering은 Mix를 최종 배포용으로 준비하는 단계다. 단순히 소리를 크게 만드는 것이 아니다.
+- Editing 문제를 Mixing으로 숨기지 않는다.
+- Arrangement 문제를 EQ만으로 해결하려 하지 않는다.
+- 더 큰 소리를 더 좋은 소리로 착각하지 않는다.
+- Mix 문제를 Mastering에서 전부 고치지 않는다.
+- Reference는 복제 대상이 아니라 균형 확인용 기준점이다.
+- 원본과 처리 결과를 모두 보존한다.
 
-주요 관점:
-
-- 전체 Tonal Balance
-- Loudness
-- True Peak
-- Limiting
-- Translation across devices
-- Sequencing/metadata if album context
-
-Mix 문제를 Mastering에서 전부 고치려고 하지 않는다.
-
-## 12. Reference Track
-
-비슷한 장르와 목적의 상업 음원을 Reference로 사용해 다음을 비교한다.
-
-- Low-end 양
-- Vocal 위치
-- Brightness
-- Stereo width
-- Loudness impression
-- Section dynamics
-
-복제하려는 것이 아니라 현재 Mix가 지나치게 치우쳤는지 확인하는 기준점이다.
-
-## 13. 직접 실습
-
-같은 Mix에 대해 세 버전을 만든다.
+## 최종 학습 기록
 
 ```text
-A: no processing
-B: basic EQ + compression
-C: B + reverb/delay + automation + limiter
+study/audio-production/
+├─ 01-audio-format-editing.md
+├─ 02-balance-pan-eq.md
+├─ 03-compression-ab.md
+├─ 04-space-automation-bus.md
+├─ 05-mix-master-reference.md
+├─ 06-translation-check.md
+├─ 07-dohastudio-audio-trace.md
+└─ 08-product-gap-notes.md
 ```
 
-각 단계가 실제로 개선되었는지 Blind에 가깝게 반복 비교한다.
+## DohaStudio 연결
 
-## 14. DohaStudio와 연결
+### CURRENT
+현재 DohaMusic의 WAV 결과와 Project playback을 이용해 청취·비교한다. 외부 DAW에서 수정한 결과와 원본을 A/B하는 학습이 가능하다.
 
-### DohaMusic
+### FOUNDATION / TARGET
+완성형 Mixer, Automation lane, Plugin host, Production Audio AI 기능은 실제 최신 구현 상태를 확인한 뒤 표시한다. 책에서 목표 기능을 현재 사용 가능한 기능으로 서술하지 않는다.
 
-Mix, Export, Composition Snapshot의 최종 Workspace 결과를 소유하는 방향이다. 현재 완성형 Mixer의 Volume/Pan/Mute/Solo와 Track/Clip editing은 아직 목표 영역이 포함되어 있다.
+### 책임 경계
+- DohaMusic: Project/Composition/Artifact/Job 및 Workspace orchestration
+- DohaAudio: 음악·오디오 AI Provider 경계
+- DohaVocal: 보컬 특화 AI/Correction Provider 경계
 
-### DohaAudio
+## Part 09 완료 기준
 
-Music Generation/Stem/Audio Analysis 및 향후 Audio AI 처리의 Provider 역할이다. 현재 실제 모델보다 Runtime, Dataset/Training governance foundation이 중심이므로 책에서 실제 Mix/Master 기능이 구현됐다고 쓰지 않는다.
-
-### DohaVocal
-
-Pitch/Timing Correction, Noise Reduction, Vocal Enhancement 등의 장기 책임이 있으나 실제 Production 모델은 현재 미구현이다.
-
-## 15. 현재 프로그램으로 공부하기
-
-현재 WAV 결과를 `/result/[jobId]` 또는 Project playback에서 듣고 다음을 기록한다.
-
-```text
-Low-end:
-Vocal balance:
-Harshness:
-Dynamic range:
-Stereo image:
-Clipping/distortion:
-Section loudness consistency:
-```
-
-외부 DAW에서 수정했다면 원본 AI 결과와 후처리 버전을 반드시 비교한다.
-
-## 16. 이 장을 끝냈다면
-
-- Editing, Mixing, Mastering을 구분할 수 있다.
-- EQ/Compression/Reverb/Delay의 목적을 설명할 수 있다.
-- Automation과 Bus processing의 역할을 이해한다.
-- Reference Track을 분석 기준으로 사용할 수 있다.
-- DohaMusic/DohaAudio/DohaVocal의 Audio 책임 경계를 구분할 수 있다.
+- Digital Audio 기본 규격을 설명한다.
+- Editing/Mixing/Mastering을 구분한다.
+- Gain/Pan/EQ로 기본 Balance를 만든다.
+- Compressor의 Attack/Release 변화를 듣는다.
+- Reverb/Delay/Automation/Bus를 목적에 맞게 사용한다.
+- Reference Track과 여러 재생 환경으로 결과를 점검한다.
+- 원본→Mix→Master lineage와 수정 이유를 기록한다.
