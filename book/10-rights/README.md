@@ -1,152 +1,76 @@
 # Part 10 — Rights: 음악을 만들 권리와 사용할 권리를 구분한다
 
-> 학습 목표: 저작권, 소유권, 사용 허가, Dataset/Model/Sample/Voice 권리를 분리해서 이해하고 DohaStudio의 권리 Gate가 왜 필요한지 배운다.
+> 학습 목표: 저작권, 소유권, 라이선스, Sample/SoundFont/Plugin, Dataset/Model, Voice, AI 서비스 약관을 서로 다른 권리 문제로 구분하고 발매 전까지 증거와 lineage를 남긴다.
 
-## 1. Copyright와 Ownership은 같은 말이 아니다
+## 공부 순서
 
-서비스 약관에서 결과물의 Ownership을 준다고 해도 해당 결과가 법률상 인간 저작물로 인정되는지와는 별개의 문제다. 반대로 저작권이 있다고 해도 사용한 Sample, Voice, Dataset, 외부 Model의 권리가 모두 자동으로 해결되는 것은 아니다.
+1. [Lesson 01 — Copyright, Ownership, License](lesson-01-copyright-ownership-license.md)
+2. [Lesson 02 — AI 산출물과 서비스 약관](lesson-02-ai-output-terms.md)
+3. [Lesson 03 — Sample, Plugin, Virtual Instrument, SoundFont](lesson-03-samples-plugins-soundfonts.md)
+4. [Lesson 04 — Dataset, Model, Voice Rights](lesson-04-dataset-model-voice-rights.md)
+5. [Lesson 05 — Artifact Lineage, Similarity, Release Check](lesson-05-lineage-similarity-release-check.md)
 
-따라서 항상 질문을 분리한다.
-
-```text
-누가 만들었는가?
-누가 소유하는가?
-누가 사용할 수 있는가?
-어떤 범위에서 사용할 수 있는가?
-상업 이용이 가능한가?
-재배포가 가능한가?
-학습에 사용할 수 있는가?
-```
-
-## 2. 저작인격권, 저작재산권, 저작인접권
-
-### 저작인격권
-
-창작자의 인격과 연결되는 권리 영역이다.
-
-### 저작재산권
-
-복제, 배포 등 경제적 이용과 관련된 권리 영역이다.
-
-### 저작인접권
-
-실연자, 음반제작자 등 저작물을 전달하고 제작하는 주체와 관련된 권리다.
-
-세부 법적 적용은 국가와 상황에 따라 달라질 수 있으므로 실제 발매·계약 전에는 최신 법률과 전문가 검토가 필요하다.
-
-## 3. AI 산출물
-
-AI가 거의 전부 생성한 결과와 사람이 선택·편집·재구성한 결과는 인간 창작 기여 정도가 다르다. 단순 Prompt 입력만으로 충분한 저작자성이 인정된다고 가정하지 않는다.
-
-공부용으로는 다음을 기록한다.
+## 이 Part의 전체 흐름
 
 ```text
-Human contribution:
-- lyrics edited by human
-- section order changed
-- melody notes manually revised
-- instrument replaced
-- mix/master performed
+Asset / Dataset / Voice / Model / Service
+→ License & Consent Evidence
+→ Allowed Scope
+→ Generation / Editing
+→ Artifact Lineage
+→ Similarity / Human Review
+→ Release Decision
 ```
 
-이 기록은 법적 결론을 자동으로 만들지는 않지만 창작 과정의 provenance를 남긴다.
+핵심은 `파일을 가지고 있음`, `무료임`, `구매함`, `AI가 생성함` 같은 사실만으로 사용 권한을 추론하지 않는 것이다.
 
-## 4. AI 서비스 약관
-
-Suno, Udio 등 외부 서비스의 플랜과 상업 이용 조건은 변경될 수 있다. 책에 고정된 사실처럼 적지 않고 다음 정보를 확인 날짜와 함께 기록한다.
+## 핵심 구분
 
 ```text
-Service:
-Plan:
-Checked date:
-Commercial use:
-Ownership wording:
-Training/data terms:
-Official source:
+Copyright ≠ Ownership ≠ License
+Commercial use ≠ Redistribution
+Music release use ≠ AI training use
+Recording consent ≠ Training consent
+Similarity score ≠ Legal infringement decision
+Registered/ingested asset ≠ Approved-for-use asset
 ```
 
-## 5. Sample과 Loop
-
-Royalty-free가 copyright-free를 뜻하지는 않는다. 구매한 Sample Pack도 재배포 제한, 단독 판매 금지, Content ID 제한 등이 있을 수 있다.
-
-특히 원본 Sample 자체를 그대로 판매하거나 Dataset에 넣는 행위는 음악 작품에 사용하는 것과 다른 권리 문제다.
-
-## 6. Virtual Instrument와 SoundFont
-
-Plugin 프로그램의 라이선스와 그 안의 Sample content 라이선스가 다를 수 있다. SoundFont 역시 파일을 무료로 내려받을 수 있다는 사실만으로 상업 이용이 허용된다고 판단하지 않는다.
-
-확인 항목:
-
-- commercial music release
-- redistribution
-- sample extraction
-- derivative sample pack
-- AI training use
-- attribution requirement
-
-## 7. Voice와 Consent
-
-본인 음성 또는 명시적으로 동의받은 음성만 사용한다. Voice Enrollment Sample과 실제 작품 Recording Take, Training Dataset은 서로 다르다.
+## 최종 학습 기록
 
 ```text
-Consent to record ≠ consent to train
-Consent to convert ≠ consent to publish
-Consent to publish ≠ consent to redistribute model
+study/rights/
+├─ 01-copyright-ownership-license.md
+├─ 02-ai-service-terms-log.md
+├─ 03-sample-soundfont-license-log.md
+├─ 04-dataset-model-rights.md
+├─ 05-voice-consent-log.md
+├─ 06-human-contribution-log.md
+├─ 07-artifact-lineage-review.md
+├─ 08-release-rights-checklist.md
+└─ 09-rights-product-gap-notes.md
 ```
 
-## 8. Dataset Rights
+## DohaStudio 연결 원칙
 
-Dataset을 내려받을 수 있다는 사실은 다음을 의미하지 않는다.
+### Rights Evidence
+권리 판단은 근거와 확인 날짜를 남긴다. 정보가 부족하면 `UNKNOWN/BLOCKED`로 둔다.
 
-- 상업적 학습 허용
-- 파생 Dataset 재배포 허용
-- 원본 Audio 재배포 허용
-- Model weight 공개 허용
+### Fail-closed
+학습·생성·배포가 가능한지 확실하지 않을 때 자동으로 허용하지 않는다.
 
-DatasetVersion을 만들기 전에 권리 Evidence와 scope를 확인한다.
+### Lineage
+최종 음악이 어떤 AssetVersion, Dataset, Provider, Model, Voice, Human Edit, Mix/Master를 거쳤는지 추적 가능해야 한다.
 
-## 9. Model Rights
+### CURRENT / FOUNDATION / TARGET
+Rights Gate, Dataset Admission, Voice Enrollment, Similarity 등은 각 원본 저장소의 최신 실제 구현 상태를 확인한 뒤 표시한다. Book의 개념 모델을 구현 완료 상태로 오해하지 않는다.
 
-외부 Model에도 License가 있다. Code License와 Model Weight License가 다를 수 있으며 학습 Dataset의 권리 문제도 별도로 존재할 수 있다.
+## Part 10 완료 기준
 
-## 10. DohaStudio의 Rights 관점
-
-DohaMusic은 사용자 요청과 Workspace 권리 흐름을 관리하고, Provider는 허용된 입력만 처리하도록 fail-closed하는 방향을 유지한다.
-
-DohaAudio의 현재 Dataset Admission/Enrollment/Human Review Foundation은 실제 Dataset이 자동 승인됐다는 뜻이 아니다. 현재 실제 후보들은 권리나 증거가 부족하면 `BLOCKED` 상태를 유지한다.
-
-DohaVocal에서도 Enrollment Sample, Recording Take, Training Dataset을 분리한다.
-
-DohaMusic의 `RightsMetadata`, Asset lineage, Artifact provenance는 이런 구분을 시스템 안에서 잃지 않기 위한 기반이다.
-
-## 11. Similarity
-
-SimilarityReport는 자동 법률 판정이 아니다. 음악적으로 비슷한 부분을 검토하라는 신호로 사용한다.
-
-높은 유사성이 발견되면:
-
-1. 어떤 요소가 유사한지 확인
-2. Melody/Chord/Rhythm/Sound 중 무엇인지 분리
-3. 레퍼런스 의존도를 다시 평가
-4. 필요한 경우 수정/재생성
-5. 최종 Human Review
-
-## 12. 발매 전 체크
-
-```text
-[ ] 내가 사용한 모든 Sample의 상업 이용 조건을 확인했다.
-[ ] Virtual Instrument/SoundFont의 사용 조건을 확인했다.
-[ ] 외부 AI 서비스 약관의 현재 조건을 확인했다.
-[ ] Voice consent 범위를 확인했다.
-[ ] Reference audio를 무단 재사용하지 않았다.
-[ ] Human editing/creation history를 기록했다.
-[ ] Dataset/Model 권리를 작품 사용권과 혼동하지 않았다.
-[ ] 유사도 검토가 필요하면 별도로 확인했다.
-```
-
-## 13. 이 장을 끝냈다면
-
-- Copyright, Ownership, License를 구분해서 질문할 수 있다.
-- Sample/Plugin/SoundFont/Dataset/Model 권리를 별개로 확인할 수 있다.
-- Voice consent scope를 구분할 수 있다.
-- DohaStudio의 fail-closed Rights Gate가 필요한 이유를 설명할 수 있다.
+- Copyright/Ownership/License를 구분한다.
+- AI 서비스의 상업 이용 약관을 확인 날짜와 함께 기록한다.
+- Sample/SoundFont/Plugin의 작품 사용권과 재배포/학습권을 분리한다.
+- Dataset/Model/Voice 권리를 별도로 검토한다.
+- 인간의 창작/편집 기여를 기록한다.
+- Final Artifact lineage를 추적한다.
+- Similarity를 검토 신호로 사용한다.
+- 발매 전 Rights Checklist를 통과하지 못하면 RELEASE하지 않는다.
