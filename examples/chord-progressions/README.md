@@ -14,6 +14,36 @@ Progression
 → DohaStudio 기능 요구 발견
 ```
 
+## Starter Set
+처음에는 아래 8개 진행을 순서대로 공부한다.
+
+1. [Basic Major — I–V–vi–IV](01-basic-major/prog-001-i-v-vi-iv.md)
+2. [Basic Minor — i–VI–III–VII](02-basic-minor/prog-002-i-vi-iii-vii.md)
+3. [Pop — vi–IV–I–V](03-pop/prog-003-vi-iv-i-v.md)
+4. [Ballad — I–iii–IV–iv](04-ballad/prog-004-i-iii-iv-ivminor.md)
+5. [R&B — ii7–V7–Imaj7–vi7](05-rnb/prog-005-ii-v-i-vi.md)
+6. [Rock — I–♭VII–IV](06-rock/prog-006-i-bvii-iv.md)
+7. [Dance — i–VI–III–VII](07-dance/prog-007-i-vi-iii-vii.md)
+8. [Cinematic — i–♭VI–iv–V](08-cinematic/prog-008-i-bvi-iv-v.md)
+
+이 세트의 목적은 '장르 공식'을 암기하는 것이 아니라, 서로 다른 기능/색채/리듬 맥락을 MIDI로 직접 비교하는 것이다.
+
+## 공통 실습 순서
+모든 진행에서 같은 절차를 사용한다.
+
+```text
+1. Root-position block chord 입력
+2. Roman Numeral 확인
+3. Tempo Variation
+4. Velocity Variation
+5. Duration/Rhythm Variation
+6. Voicing/Inversion Variation
+7. Transpose
+8. Instrument/Timbre 변경
+9. A/B Listening
+10. Section Fit 기록
+```
+
 ## 분류
 ```text
 01-basic-major/
@@ -62,7 +92,9 @@ F Transpose
 G Instrument/Timbre
 ```
 
-## 파일 예시
+공통 기록에는 [Progression Study Template](progression-template.md)을 사용한다.
+
+## 실제 MIDI 파일을 추가할 때
 ```text
 examples/chord-progressions/03-pop/prog-001/
 ├─ README.md
