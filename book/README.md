@@ -65,6 +65,9 @@ Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Mo
 ### [Part 16 — Release & Distribution](16-release-distribution/README.md)
 완성된 Master를 실제 발매 단위로 준비하면서 Rights/Credits, Metadata, Distributor/DSP 흐름, Revenue 구조와 Release Package를 공부한다.
 
+### [Part 17 — Applied & Jazz Harmony](17-applied-jazz-harmony/README.md)
+Part 03 이후의 심화 화성 과정이다. Subdominant Minor, Tonic Substitute, Diminished, Minor ii–V–i, Extended Dominant, Deceptive Cadence, Available Note Scale, Pedal Point, Slash Chord, Turnaround, Blues/Blue Note를 실제 MIDI·Melody·AI Candidate 평가와 연결한다.
+
 ## Appendix — 작업 환경
 
 ### [Music Production Setup](appendix-production-setup/README.md)
@@ -82,10 +85,11 @@ PC 성능, Storage, Audio Interface, Driver/Buffer, Monitoring, Recording Setup,
 14     반복 훈련
 15     협업과 전달
 16     발매와 유통
+17     심화 실용·재즈 화성
 Appendix 작업 환경 참고
 ```
 
-처음부터 전부 완독할 필요는 없다. Part 01~06에서 첫 Demo 재료를 만들고 Part 08~09에서 직접 편집한 뒤 Part 13으로 곡을 완성한다. 실제 공개/발매를 준비할 때 Part 10과 Part 16을 다시 확인한다.
+Part 17은 필수 선행 과정이 아니다. 첫 Demo를 만들기 전에 재즈 화성을 완주하려고 하지 않는다. Part 03의 기본 화성을 실제로 사용할 수 있게 된 뒤, 곡에서 더 정교한 harmony/voice-leading/melody 선택이 필요할 때 들어간다.
 
 ## 한 Chapter의 표준 형식
 
