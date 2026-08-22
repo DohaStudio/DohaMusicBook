@@ -2,215 +2,79 @@
 
 > 목표: 앞에서 공부한 내용을 하나의 실제 Demo Song에 연결한다. 이 Part는 이론 복습이 아니라 제작 기록이다.
 
-## 1. Music Intent
+## 공부 순서
+
+1. [Lesson 01 — Intent, Reference, Song Form](lesson-01-intent-reference-form.md)
+2. [Lesson 02 — Rhythm, Harmony, Melody](lesson-02-rhythm-harmony-melody.md)
+3. [Lesson 03 — Lyrics, Vocal, Arrangement, Sound](lesson-03-lyrics-arrangement-sound.md)
+4. [Lesson 04 — AI Generation, Screening, Selection](lesson-04-ai-generation-selection.md)
+5. [Lesson 05 — Human Edit, Mix/Master, Rights, Final Review](lesson-05-edit-mix-rights-final.md)
+6. [Lesson 06 — DohaStudio 제작 기록과 Portfolio](lesson-06-project-record-portfolio.md)
+
+## 전체 제작 흐름
 
 ```text
-Title working name:
-Purpose:
-Target listener:
-Genre:
-Mood:
-Tempo range:
-Key preference:
-Reference songs:
-Must have:
-Avoid:
+Music Intent
+→ Reference Analysis
+→ Song Form / Energy Curve
+→ Rhythm / Harmony / Melody
+→ Lyrics / Vocal Plan
+→ Arrangement / Sound Palette
+→ AI Candidate Generation
+→ Screening / Selection
+→ Human Editing
+→ Mix / Master
+→ Rights / Similarity Review
+→ Final Export
+→ DohaStudio Trace / Portfolio
 ```
 
-## 2. Reference Analysis
+## 이 Part에서 지킬 원칙
 
-각 레퍼런스를 복제하지 않고 다음 항목으로 분해한다.
+- AI 후보 하나를 완성곡으로 바로 확정하지 않는다.
+- '좋다/나쁘다' 대신 음악적 이유를 기록한다.
+- 원본 AI 결과와 Human Edit 결과를 분리 보존한다.
+- 현재 DohaMusic에서 못 하는 작업은 외부 DAW로 실습하되 `TARGET` product gap으로 기록한다.
+- Reference는 복제 대상이 아니라 분석 기준이다.
+- Rights 검토는 마지막에 한 번만 하는 것이 아니라 Sound source와 Voice를 선택하는 순간부터 이어진다.
+
+## Demo Song 작업 폴더 예시
 
 ```text
-Song form:
-BPM / feel:
-Harmony:
-Main motif:
-Chorus contour:
-Instrumentation:
-Energy curve:
-Vocal character:
-Mix texture:
+study/demo-song-001/
+├─ 01-intent.md
+├─ 02-reference-analysis.md
+├─ 03-song-form-energy.md
+├─ 04-rhythm-harmony-melody.md
+├─ 05-lyrics-vocal.md
+├─ 06-arrangement-sound.md
+├─ 07-generation-batch.md
+├─ 08-candidate-review.md
+├─ 09-edit-log.md
+├─ 10-mix-master-review.md
+├─ 11-rights-check.md
+├─ 12-dohastudio-trace.md
+└─ 13-final-retrospective.md
 ```
 
-## 3. Song Form
+## 최종 제출물
 
-곡을 만들기 전에 Section Map을 먼저 적는다.
+이 Part를 끝낼 때 최소한 다음이 있어야 한다.
 
 ```text
-Intro:
-Verse 1:
-Pre-Chorus:
-Chorus:
-Verse 2:
-Pre-Chorus:
-Chorus:
-Bridge:
-Final Chorus:
-Outro:
+1 final audio
+1 Music Intent
+1 Reference Analysis
+1 Section/Energy Map
+1 Harmony/Melody plan
+1 Lyrics/Vocal plan
+1 Arrangement map
+2+ candidate reviews
+1 human edit log
+1 mix/master review
+1 rights checklist
+1 DohaStudio product-gap record
+1 retrospective
 ```
 
-각 Section에 `bars`, `energy 1–10`, `role`, `main instrument`, `vocal range`를 적는다.
-
-## 4. Rhythm/Groove
-
-```text
-BPM:
-Meter:
-Feel:
-Kick concept:
-Snare/Clap concept:
-Hi-hat/subdivision:
-Bass rhythm:
-Main syncopation:
-```
-
-## 5. Harmony
-
-Verse, Pre, Chorus를 따로 작성한다.
-
-```text
-Key:
-Verse progression:
-Pre progression:
-Chorus progression:
-Bridge progression:
-Reharmonization used:
-Harmonic rhythm:
-```
-
-## 6. Motif & Melody
-
-```text
-Core motif:
-Motif rhythm:
-Verse variation:
-Pre variation:
-Chorus hook:
-Highest note:
-Overall range:
-Main tension/resolution:
-```
-
-## 7. Lyrics & Prosody
-
-```text
-Concept sentence:
-Verse scene:
-Chorus message:
-Hook phrase:
-Syllable problems:
-Awkward stress:
-Breath points:
-AI clichés removed:
-```
-
-## 8. Arrangement & Sound Palette
-
-Section별로 악기 역할을 적는다.
-
-```text
-Drums:
-Bass:
-Harmony:
-Lead:
-Pad/texture:
-FX:
-Vocal layers:
-```
-
-## 9. AI Candidate Generation
-
-후보마다 동일한 기준을 남긴다.
-
-```text
-Candidate ID:
-Input/condition:
-Generation job:
-Good:
-Bad:
-Melody score:
-Harmony score:
-Rhythm score:
-Structure score:
-Sound score:
-Intent-fit score:
-Keep / Reject / Revise:
-```
-
-## 10. Human Review
-
-선택한 이유를 반드시 말로 쓴다. `그냥 더 좋음`은 금지한다.
-
-```text
-Selected candidate:
-Why:
-What must change:
-What must remain unchanged:
-```
-
-## 11. MIDI / Audio / Vocal Editing
-
-현재 DohaMusic에서 직접 수정할 수 없는 항목은 외부 DAW에서 실습하고 `TARGET`으로 표시한다.
-
-```text
-Melody edits:
-Chord edits:
-Timing edits:
-Instrument replacement:
-Vocal edits:
-Audio edits:
-```
-
-## 12. Mix & Master
-
-```text
-Gain balance:
-EQ issues:
-Compression:
-Space/Reverb:
-Stereo:
-Automation:
-Loudness/peak:
-Reference comparison:
-```
-
-## 13. Rights / Similarity
-
-```text
-AI service/plan:
-Samples used:
-Virtual instruments:
-SoundFont:
-Voice consent:
-Reference audio reused? no/yes + reason:
-Human contribution record:
-Similarity review:
-```
-
-## 14. DohaStudio 제작 기록
-
-```text
-DohaMusic Project ID:
-Composition/Snapshot:
-Jobs:
-Artifacts:
-Provider used:
-Screens used:
-Program limitation found:
-Feature idea created from this session:
-```
-
-## 15. Final Review
-
-완성 후 하루 이상 간격을 두고 다시 듣는다.
-
-- 첫 30초가 목적에 맞는가?
-- Chorus가 기억나는가?
-- Verse와 Chorus 대비가 충분한가?
-- 가사가 자연스럽게 들리는가?
-- 불필요하게 복잡한 부분이 있는가?
-- 레퍼런스에 지나치게 닮은 부분이 있는가?
-- 내가 의도한 감정이 실제로 들리는가?
-
-최종 목표는 `AI가 곡을 만들었다`가 아니라 **내가 음악적 판단을 통해 한 곡을 완성했다**는 제작 기록을 남기는 것이다.
+최종 목표는 `AI가 곡을 만들었다`가 아니라 **내가 음악적 판단을 이용해 한 곡의 기획, 생성, 선택, 수정, 완성 과정을 끝까지 통제했다**는 증거를 남기는 것이다.
