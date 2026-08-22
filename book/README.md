@@ -18,75 +18,79 @@
 작곡의 목적, 음악의 핵심 요소, AI 시대에 사람이 맡아야 할 판단, DohaStudio 학습법을 먼저 정리한다.
 
 ### [Part 01 — Song Form](01-song-form/README.md)
-Intro / Verse / Pre-Chorus / Chorus / Bridge / Outro, Section Contrast, Energy Curve를 공부하고 현재 DohaMusic Timeline에서 실제 곡의 구조를 분석한다.
+Intro / Verse / Pre-Chorus / Chorus / Bridge / Outro, Section Contrast, Energy Curve를 공부한다.
 
 ### [Part 02 — Rhythm](02-rhythm/README.md)
-Beat / Tempo / Meter / Straight / Swing / Shuffle / Syncopation / Pickup / Groove를 배우고 AI 후보의 리듬을 비교한다.
+Beat / Tempo / Meter / Straight / Swing / Shuffle / Syncopation / Pickup / Groove를 배우고 실제 Drum Beatmaking으로 연결한다.
 
 ### [Part 03 — Harmony](03-harmony/README.md)
-Key / Scale / Diatonic Chord / Chord Function / Harmonic Rhythm / Inversion / Reharmonization / Modulation을 공부한다.
+Key / Scale / Diatonic Chord / Chord Function / Harmonic Rhythm / Inversion / Reharmonization / Modulation을 공부하고 MIDI Progression Variation으로 직접 듣는다.
 
 ### [Part 04 — Melody](04-melody/README.md)
-Phrase / Motif / Contour / Range / Stepwise / Leap / Motif Development / Non-Chord Tone / Hook을 배우고 후보 멜로디를 분석한다.
+Phrase / Motif / Contour / Range / Stepwise / Leap / Motif Development / Non-Chord Tone / Hook을 배운다.
 
 ### [Part 05 — Lyrics & Vocal](05-lyrics-vocal/README.md)
-Concept / Story / Syllable / Prosody / Rhyme / Breath / Vocal Range / Register / Harmony / Ad-lib을 공부하며 DohaLM·DohaVocal 경계를 연결한다.
+Concept / Story / Syllable / Prosody / Rhyme / Breath / Vocal Range / Register / Harmony / Ad-lib을 공부한다.
 
 ### [Part 06 — Arrangement & Sound](06-arrangement-sound/README.md)
-Instrument Role / Density / Layering / Timbre / Register / Dynamics / Stereo Image / Virtual Instrument / Sample / SoundFont를 공부한다.
+Instrument Role / Density / Layering / Timbre / Register / Dynamics / Stereo Image / Virtual Instrument / Sample / SoundFont와 Sampling/Synthesis를 공부한다.
 
 ### [Part 07 — AI Music](07-ai-music/README.md)
 Reference Analysis → Structured Condition → Candidate Generation → Human Review → Revision의 전체 흐름을 배운다.
 
 ### [Part 08 — MIDI & DAW](08-midi-daw/README.md)
-MIDI Note / Velocity / Duration / CC / Quantization / Humanization / Track / Clip / Piano Roll / Plugin을 배우고 현재 DohaMusic DAW Foundation과 비교한다.
+MIDI Note / Velocity / Duration / CC / Quantization / Humanization / Track / Clip / Piano Roll / Plugin을 배우고 Chord Progression MIDI Practice를 수행한다.
 
 ### [Part 09 — Audio Production](09-audio-production/README.md)
-Recording / Editing / EQ / Compression / Reverb / Delay / Panning / Automation / Bus / Mixing / Mastering을 공부한다.
+Recording / Vocal Correction / Editing / EQ / Compression / Distortion / Reverb / Delay / Panning / Automation / Bus / Mixing / Mastering을 공부한다.
 
 ### [Part 10 — Rights](10-rights/README.md)
 Copyright / Ownership / License / AI contribution / Sample / SoundFont / Dataset / Model / Voice Consent / Similarity를 분리해서 이해한다.
 
 ### [Part 11 — DohaStudio 코드로 음악 이해하기](11-dohastudio-code/README.md)
-DohaMusic, DohaLM, DohaAudio, DohaVocal의 실제 `develop` 상태와 역할 경계를 읽고 음악 개념이 코드에서 어떻게 표현되는지 추적한다.
+DohaMusic, DohaLM, DohaAudio, DohaVocal의 실제 구현 경계를 읽고 음악 개념이 코드에서 어떻게 표현되는지 추적한다.
 
 ### [Part 12 — 현재 DohaMusic 사용법](12-dohamusic-user-guide/README.md)
-Backend/Frontend 실행, `/studio`, `/lyrics`, `/voice`, `/generation/[jobId]`, `/result/[jobId]`, `/history`, `/projects/[id]` 등을 실제 공부 흐름과 연결한다.
+현재 프로그램의 제작/생성/결과/History/Project 흐름을 실제 공부와 연결한다.
 
 ### [Part 13 — 하나의 곡 완성하기](13-demo-project/README.md)
-Music Intent부터 Reference Analysis, Song Form, Rhythm, Harmony, Melody, Lyrics, Arrangement, AI Candidate, Human Edit, Mix/Master, Rights, Final Review까지 하나의 Demo 제작 기록을 남긴다.
+Music Intent부터 Final Review까지 하나의 Demo 제작 기록을 남긴다.
 
 ### [Part 14 — 작곡가 훈련 시스템](14-composer-training/README.md)
 Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Monthly Demo, Portfolio Review를 반복한다.
 
 ### [Part 15 — Collaboration & Delivery](15-collaboration-delivery/README.md)
-협업 Brief, Recording Take 관리, Mix/Master Handoff, Stem/Deliverable, Credit·Rights·Version 관리까지 실제 작업 전달 절차를 배운다.
+협업 Brief, Recording Take, Mix/Master Handoff, Stem/Deliverable, Credit·Rights·Version 관리를 배운다.
+
+### [Part 16 — Release & Distribution](16-release-distribution/README.md)
+완성된 Master를 실제 발매 단위로 준비하면서 Rights/Credits, Metadata, Distributor/DSP 흐름, Revenue 구조와 Release Package를 공부한다.
 
 ## Appendix — 작업 환경
 
 ### [Music Production Setup](appendix-production-setup/README.md)
 PC 성능, Storage, Audio Interface, Driver/Buffer, Monitoring, Recording Setup, DAW/Plugin 관리, Backup/Versioning을 실제 음악 제작 환경과 연결한다.
 
-이 Appendix는 Part 08~09를 공부하기 전 또는 실제 장비/Plugin 문제가 생겼을 때 참고한다.
-
 ## 추천 학습 방식
 
-처음 공부할 때는 `Part 00 → 10`을 음악 제작 기초로 진행하고, DohaStudio 개발 중에는 `Part 11 → 12`를 병행한다. 이후 `Part 13 → 15`에서 완성·반복 훈련·협업 전달까지 연결한다.
-
 ```text
-00~10  음악과 제작 문법
+00~06  작곡·편곡 문법
+07     AI와 후보 생성/평가
+08~09  실제 MIDI/Audio 제작
+10     Rights
 11~12  내 프로그램/코드 이해
 13     한 곡 완성
 14     반복 훈련
-15     실제 협업과 전달
-Appendix 작업 환경/장비/파일 관리 참고
+15     협업과 전달
+16     발매와 유통
+Appendix 작업 환경 참고
 ```
+
+처음부터 전부 완독할 필요는 없다. Part 01~06에서 첫 Demo 재료를 만들고 Part 08~09에서 직접 편집한 뒤 Part 13으로 곡을 완성한다. 실제 공개/발매를 준비할 때 Part 10과 Part 16을 다시 확인한다.
 
 ## 한 Chapter의 표준 형식
 
 ```text
 # Chapter
-
 ## 1. 왜 배우는가
 ## 2. 음악 이론
 ## 3. 실제 곡에서 듣는 방법
@@ -106,8 +110,9 @@ Appendix 작업 환경/장비/파일 관리 참고
 이론 읽기
 → 실제 곡 듣기
 → 직접 짧게 작곡하기
-→ AI 후보 만들기
-→ DohaMusic에서 청취/비교하기
+→ MIDI/Audio로 구현하기
+→ AI 후보 만들기/비교하기
+→ DohaMusic에서 청취/기록하기
 → 외부 DAW 또는 현재 가능한 기능으로 수정하기
 → DohaStudio 코드에서 개념 위치 확인하기
 → 프로그램에서 부족한 점 기록하기
