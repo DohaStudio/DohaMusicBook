@@ -10,6 +10,8 @@
 
 > `CURRENT`, `FOUNDATION`, `TARGET`을 반드시 구분한다. 아직 구현되지 않은 기능을 사용 가능한 기능처럼 설명하지 않는다.
 
+전체 참고 목차 대비 누락/중복 점검은 [Curriculum Audit](curriculum-audit.md)에서 관리한다.
+
 ## 권장 공부 순서
 
 ### [Part 00 — 시작하기](00-start-here/README.md)
@@ -54,8 +56,23 @@ Backend/Frontend 실행, `/studio`, `/lyrics`, `/voice`, `/generation/[jobId]`, 
 ### [Part 13 — 하나의 곡 완성하기](13-demo-project/README.md)
 Music Intent부터 Reference Analysis, Song Form, Rhythm, Harmony, Melody, Lyrics, Arrangement, AI Candidate, Human Edit, Mix/Master, Rights, Final Review까지 하나의 Demo 제작 기록을 남긴다.
 
-### [Part 14 — 작곡가 훈련 기록](14-composer-training/README.md)
-Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Demo Retrospective, Portfolio Log를 반복한다.
+### [Part 14 — 작곡가 훈련 시스템](14-composer-training/README.md)
+Daily Listening, Weekly Composition Drill, Ear Training, AI Candidate Review, Monthly Demo, Portfolio Review를 반복한다.
+
+### [Part 15 — Collaboration & Delivery](15-collaboration-delivery/README.md)
+협업 Brief, Recording Take 관리, Mix/Master Handoff, Stem/Deliverable, Credit·Rights·Version 관리까지 실제 작업 전달 절차를 배운다.
+
+## 추천 학습 방식
+
+처음 공부할 때는 `Part 00 → 10`을 음악 제작 기초로 진행하고, DohaStudio 개발 중에는 `Part 11 → 12`를 병행한다. 이후 `Part 13 → 15`에서 완성·반복 훈련·협업 전달까지 연결한다.
+
+```text
+00~10  음악과 제작 문법
+11~12  내 프로그램/코드 이해
+13     한 곡 완성
+14     반복 훈련
+15     실제 협업과 전달
+```
 
 ## 한 Chapter의 표준 형식
 
