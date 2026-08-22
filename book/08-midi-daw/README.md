@@ -10,6 +10,7 @@
 4. [Lesson 04 — Track, Clip, Timeline, Transport](lesson-04-track-clip-timeline.md)
 5. [Lesson 05 — Virtual Instrument, Plugin, Sample, SoundFont](lesson-05-virtual-instrument-soundfont.md)
 6. [Lesson 06 — AI 결과를 사람이 수정하는 DAW Workflow](lesson-06-ai-human-editing-dohastudio.md)
+7. [Lesson 07 — MIDI Customization Workflow](lesson-07-midi-customization-workflow.md)
 
 ## 이 Part의 핵심 흐름
 
@@ -19,6 +20,7 @@ MIDI Data
 → Piano Roll
 → Track / Clip / Timeline
 → Virtual Instrument / SoundFont
+→ MIDI Customization
 → Audio Render
 → Human Editing Decision
 → Version / Evaluation
@@ -37,6 +39,18 @@ MIDI는 소리가 아니라 연주 정보다. DAW 학습의 목표는 버튼 위
 
 실제 제작에서는 둘을 경쟁 관계로 보지 않고 단계별로 함께 사용한다.
 
+## Chord Progression 실습과 연결
+Part 03에서 배운 Harmony를 [`examples/chord-progressions/`](../../examples/chord-progressions/README.md) Starter Set으로 옮겨 실제 MIDI에서 수정한다.
+
+```text
+Harmony 이해
+→ MIDI 입력
+→ Tempo / Velocity / Duration
+→ Voicing / Inversion / Transpose
+→ Timbre
+→ A/B Listening
+```
+
 ## 직접 만들 최종 결과
 
 Part 08을 끝낼 때 `study/midi-daw/`에 다음 기록을 만들 수 있다.
@@ -48,8 +62,9 @@ Part 08을 끝낼 때 `study/midi-daw/`에 다음 기록을 만들 수 있다.
 04-track-clip-timeline-map.md
 05-instrument-render-comparison.md
 06-sound-source-license-log.md
-07-ai-editing-decision-record.md
-08-product-gap-notes.md
+07-midi-customization-log.md
+08-ai-editing-decision-record.md
+09-product-gap-notes.md
 ```
 
 ## DohaStudio 연결 원칙
@@ -82,6 +97,7 @@ AI 생성 결과를 사람이 수정하더라도 원본과 수정본의 Lineage�
 - Piano Roll에서 Melody/Chord/Drum MIDI를 수정한다.
 - Track/Clip/Timeline/Transport 관계를 설명한다.
 - 동일 MIDI를 여러 Virtual Instrument로 Render한다.
+- Tempo/Velocity/Duration/Transpose/Voicing을 한 변수씩 바꾸어 A/B한다.
 - SoundFont/Sample Library의 라이선스를 기록한다.
 - AI 결과에 MIDI edit, Audio edit, Regenerate 중 무엇이 필요한지 판단한다.
 - 현재 DohaMusic과 목표 DAW 기능을 구분한다.
