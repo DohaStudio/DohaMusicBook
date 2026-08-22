@@ -1,135 +1,90 @@
-# Part 14 — 작곡가 훈련 기록
+# Part 14 — 작곡가 훈련 시스템
 
-> 목표: 지식을 읽고 끝내지 않고 반복 청취, 분석, 작곡, 회고를 축적한다.
+> 목표: 지식을 읽고 끝내지 않고 `듣기 → 분석 → 작곡 → 비교 → 완성 → 회고`를 반복해 실제 음악적 판단력을 키운다.
 
-## 1. Daily Listening
+## 공부 순서
 
-하루 한 곡을 15~30분 분석한다.
+1. [Lesson 01 — Daily Listening & Analysis](lesson-01-daily-listening.md)
+2. [Lesson 02 — Weekly Composition Drills](lesson-02-weekly-composition-drills.md)
+3. [Lesson 03 — Ear Training과 분석](lesson-03-ear-training-analysis.md)
+4. [Lesson 04 — AI Candidate를 고르는 귀](lesson-04-ai-candidate-judgment.md)
+5. [Lesson 05 — Monthly Demo와 성장 Review](lesson-05-monthly-demo-review.md)
+6. [Lesson 06 — Portfolio와 Professional Practice](lesson-06-portfolio-professional-practice.md)
 
-```text
-Date:
-Song:
-Why selected:
-Song form:
-Rhythm/Groove:
-Harmony:
-Melody/Hook:
-Lyrics/Prosody:
-Arrangement:
-Sound/Mix:
-One thing to steal as a technique, not content:
-```
-
-`steal as a technique`은 멜로디나 표현을 복제한다는 뜻이 아니라, 예를 들어 `Pre-Chorus에서 악기 밀도를 낮춰 Chorus 대비를 만든다` 같은 일반적인 제작 원리를 학습한다는 의미다.
-
-## 2. Weekly Composition Drill
-
-매주 최소 하나의 짧은 작곡 과제를 수행한다.
-
-Week A: 2마디 Motif 5개
-Week B: 같은 Motif의 Chorus 3개
-Week C: 같은 Melody에 코드 진행 3개
-Week D: 같은 코드에 Groove 3개
-Week E: Verse/Pre/Chorus 1세트
-Week F: 60~90초 Demo
-
-## 3. Ear Training
-
-완벽한 절대음감보다 제작에 필요한 상대적 판단을 목표로 한다.
-
-- Tempo 대략 맞히기
-- Major/Minor 중심 구별
-- Bass root 따라가기
-- Section 경계 찾기
-- Hook Motif 따라 부르기
-- 악기 출입 듣기
-- Panning/Depth 듣기
-- Compression이 과한지 비교하기
-
-## 4. AI Candidate Review Drill
-
-AI 후보를 만들 때는 반드시 최소 두 개 이상 비교한다.
+## 기본 훈련 주기
 
 ```text
-A vs B
-Melody:
-Groove:
-Section contrast:
-Sound quality:
-Vocal:
-Originality:
-Intent fit:
-Winner:
-Why:
+Daily
+  └─ 1곡 집중 청취 / 짧은 Motif·Rhythm 연습
+
+Weekly
+  └─ 한 가지 작곡 기술 집중 Drill
+
+Monthly
+  └─ 60~180초 Demo 완성 + Retrospective
+
+Every 3 months
+  └─ Demo 비교 + 약점 재설정 + Portfolio 후보 선별
 ```
 
-선택 이유를 음악 용어로 설명하지 못하면 다시 듣는다.
+## Daily 원칙
+하루 한 곡을 15~30분 분석한다. 곡 전체를 한 번에 이해하려 하지 않고 Song Form, Rhythm, Harmony, Melody, Lyrics, Arrangement, Mix 중 필요한 관점을 나눠 듣는다.
 
-## 5. DohaStudio Product Feedback
+## Weekly 원칙
+완성곡 수보다 비교 가능한 Version을 만든다. Motif 5개, 같은 Melody의 Harmony 3개, 같은 Harmony의 Groove 3개처럼 한 요소를 바꾸고 결과를 듣는다.
 
-프로그램을 사용하면서 불편한 점을 바로 기능 요청으로 쓰기 전에 음악적 문제를 먼저 정의한다.
+## AI 사용 원칙
+AI 후보를 하나만 생성해 승인하지 않는다. 최소 두 개 이상 비교하고 Melody/Harmony/Groove/Structure/Sound/Originality/Intent Fit을 기록한다. AI가 만든 것을 고르는 능력도 작곡 훈련의 일부로 본다.
 
-나쁜 기록:
+## DohaStudio 사용 원칙
+프로그램의 부족함을 음악 실력 부족과 혼동하지 않는다.
 
 ```text
-Piano Roll 필요함
+음악적으로 무엇이 문제인가?
+내가 수정 방법을 알고 있는가?
+AI 결과 자체의 한계인가?
+현재 DohaMusic에서 수정할 수 없는가?
+어떤 제품 기능이 실제 작곡 문제를 해결하는가?
 ```
 
-더 좋은 기록:
+이 순서로 Product Gap을 기록한다.
+
+## 학습 기록 구조
 
 ```text
-문제: AI Chorus의 마지막 두 음만 수정하고 싶지만 현재 WAV 단위 결과만으로는 Melody Note를 직접 편집할 수 없다.
-음악적 목적: Chorus cadence 해결감을 바꾸기 위해 마지막 pitch/duration 수정.
-필요 기능 후보: MIDI representation + Piano Roll + selected range regeneration.
+study/composer-training/
+├─ daily/
+├─ weekly/
+├─ monthly-demos/
+├─ ear-training/
+├─ ai-candidate-reviews/
+├─ retrospectives/
+├─ product-gaps/
+└─ portfolio-log.md
 ```
 
-이렇게 하면 제품 기능이 실제 작곡 필요에서 출발한다.
+## 성장 지표
+숫자 하나로 작곡 실력을 평가하지 않는다. 다음 변화를 장기간 본다.
 
-## 6. Demo Retrospective
+- Song Form을 더 빨리 듣는가?
+- Groove를 구체적으로 설명하는가?
+- Motif를 여러 방식으로 발전시키는가?
+- Chorus Hook을 의도적으로 설계하는가?
+- Harmony 선택 이유를 설명하는가?
+- Arrangement Density를 조절하는가?
+- AI 후보를 더 엄격하게 거르는가?
+- Mix 문제와 작곡 문제를 구분하는가?
+- 완성곡 수와 완성 품질이 함께 증가하는가?
 
-곡 하나를 끝낼 때마다 다음을 쓴다.
+## Part 14 완료 기준
+이 Part는 한 번 읽고 완료되는 Chapter가 아니다. 최소 3개월의 기록을 쌓은 뒤 첫 Review를 수행한다.
 
 ```text
-What I wanted:
-What I actually made:
-Strongest musical decision:
-Weakest section:
-What AI did well:
-What AI did badly:
-What I changed manually:
-What I could not change because of the current program:
-What theory I need to study next:
-What DohaStudio feature would help:
+[ ] Daily listening 기록이 누적됐다.
+[ ] 6주 Composition Drill Cycle을 수행했다.
+[ ] 최소 3개의 Monthly Demo가 있다.
+[ ] AI Candidate 선택 이유를 음악 용어로 설명한다.
+[ ] 반복되는 자신의 약점을 찾았다.
+[ ] DohaStudio Product Gap과 개인 Skill Gap을 구분한다.
+[ ] Portfolio 후보를 근거와 함께 선별했다.
 ```
-
-## 7. Monthly Review
-
-한 달마다 기존 기록을 다시 읽는다.
-
-- 같은 실수를 반복하는가?
-- Melody가 항상 비슷해지는가?
-- 코드 진행이 너무 제한적인가?
-- Rhythm 분석을 피하고 있지는 않은가?
-- AI 결과를 너무 쉽게 승인하지 않는가?
-- Program 기능 구현이 음악 공부보다 앞서가고 있지는 않은가?
-
-## 8. Portfolio Log
-
-완성된 Demo만 기록한다.
-
-```text
-Title:
-Date completed:
-Role:
-Genre:
-Length:
-Human-written parts:
-AI-assisted parts:
-Tools:
-Mix/master:
-Rights check:
-What this song demonstrates:
-Next revision:
-```
-
-이 Part의 목적은 많이 만든 것처럼 보이는 것이 아니라 **시간이 지날수록 음악적 판단이 실제로 좋아지고 있는지 확인하는 것**이다.
