@@ -86,7 +86,46 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 - Altered scale을 melodic minor 7th mode / Super-Locrian과 연결하고 실제 pitch collection을 명시했다.
 - Upper Structure Triad를 고정 공식이 아니라 lower shell 대비 tension을 계산하는 voicing 도구로 명확히 했다.
 
-현재 spot-check 범위에서 병합을 막는 명백한 이론 오류는 남아 있지 않다. 세부 용어 표기 통일은 P1에서 계속 정리한다.
+현재 spot-check 범위에서 병합을 막는 명백한 이론 오류는 남아 있지 않다.
+
+### Terminology consistency review
+
+Part 03과 Part 17에서 기능화성 용어를 다음 기준으로 정리했다.
+
+```text
+Tonic (T)
+Predominant (PD)
+Dominant (D)
+```
+
+재즈 문헌에서 Predominant 영역을 `Subdominant (SD) family`라고 부르는 문맥이 있으므로, Part 17에서 두 용어가 겹치는 관계를 명시했다. `Subdominant Minor`는 고유한 재즈/응용 화성 개념명으로 유지한다.
+
+추가 원칙:
+- Key / Scale / Interval / Chord / Cadence 등 기존 핵심 영문 용어는 유지한다.
+- 동일 개념을 문서마다 임의로 다른 번역어로 바꾸지 않는다.
+- 기능 약어는 `T / PD / D`를 기본값으로 사용한다.
+- chord symbol, scale degree, Roman Numeral은 음악 표기이므로 번역하지 않는다.
+
+### Part 03 / Part 17 scope review
+
+Part 03 Lesson 05는 Reharmonization의 입문 범위로 제한했다.
+
+```text
+Part 03
+- Secondary Dominant의 목표 관계
+- Related ii의 기초
+- Tritone Substitution의 청감 비교
+- Modal Interchange와 Modulation 구분
+
+Part 17
+- Guide Tone 기반 분석
+- Substitute ii–V
+- Altered Dominant / tension
+- Subdominant Minor
+- Jazz voicing / modal harmony 등 심화 적용
+```
+
+Part 03에서 Part 17의 관련 Lesson으로 직접 연결해 같은 설명을 반복하기보다 `기초 → 심화` 관계가 보이도록 정리했다.
 
 ### CURRENT / FOUNDATION / TARGET review
 
@@ -109,9 +148,9 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 - [ ] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인
 - [x] 57개 MIDI(original/variation/ear-training)의 생성/parse/readability 검증
 - [x] 각 MIDI의 note content와 문서 chord/harmonic intent 대조 및 발견된 불일치 수정
-- [ ] 기본 화성학 용어의 한글/영문 표기 일관성 검수
+- [x] 기본 화성학 용어의 한글/영문 표기 일관성 검수
 - [x] Jazz Harmony의 chord-scale / altered tension 핵심 설명 정확성 spot-check
-- [ ] Part 03과 Part 17의 중복 범위를 최소화
+- [x] Part 03과 Part 17의 중복 범위를 최소화
 - [ ] Part 16의 Rights 설명이 Part 10과 충돌하지 않는지 검수
 - [x] CURRENT / FOUNDATION / TARGET 문장을 최신 DohaStudio source와 대조
 
