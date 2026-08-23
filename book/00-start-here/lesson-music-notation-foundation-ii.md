@@ -11,16 +11,18 @@
 
 - Sharp `#`: 음을 반음 올린다.
 - Flat `b`: 음을 반음 내린다.
-- Natural: 앞서 적용된 sharp/flat을 원래 음으로 되돌린다.
+- Natural: 해당 음에 적용된 sharp/flat을 취소한다.
 
-악보에서 accidental의 효력 범위는 표기 관습과 마디 문맥을 함께 확인한다.
+Common-Practice staff notation에서 **마디 안에 붙은 accidental은 일반적으로 그 마디 안에서 같은 staff position의 같은 음이름/옥타브에 효력이 지속**되고, bar line을 지나면 key signature의 상태로 돌아간다. Tie로 bar line을 넘어가는 음, contemporary notation convention, editorial accidental 등에는 예외와 표기 관습이 있으므로 실제 score 문맥을 확인한다.
 
 ## 2. Enharmonic Spelling
-평균율 MIDI/피아노에서는 C#과 Db가 같은 pitch로 재생될 수 있지만 이론적 이름은 기능을 설명한다.
+12-TET 기반 MIDI/피아노에서는 C#과 Db가 같은 sounding pitch로 재생될 수 있지만 이론적 spelling은 scale degree와 harmonic/linear function을 설명한다.
 
 ```text
-C# → D로 진행하는 leading/approach 문맥
-Db → C로 내려가는 chromatic 문맥
+D major의 7th scale degree: C#
+Db major의 tonic:           Db
+C로 내려가는 chromatic upper approach: Db → C
+D로 올라가는 chromatic lower approach: C# → D
 ```
 
 따라서 `같은 MIDI note number = 항상 같은 음악적 spelling`으로 보지 않는다. Chord와 Scale을 분석할 때는 letter-name 구조와 기능을 함께 본다.
@@ -38,7 +40,7 @@ D major / B minor
 Bb major / G minor
 ```
 
-Major와 Relative Minor가 같은 key signature를 공유할 수 있어도 tonal center와 기능은 다르다.
+Major와 Relative Minor가 같은 key signature를 공유할 수 있어도 tonal center와 기능은 다르다. Harmonic/Melodic Minor처럼 실제 minor-key music에서는 key signature 밖의 altered scale degree가 자주 나타날 수 있다.
 
 ## 4. Time Signature
 Time Signature는 단순히 `한 마디에 숫자가 몇 개 있는가`가 아니라 beat grouping과 notation의 기준을 제공한다.
@@ -58,7 +60,7 @@ Dot은 앞 음가의 절반을 더한다.
 dotted quarter = quarter + eighth
 ```
 
-Tie는 같은 pitch의 두 음을 이어 하나의 지속음처럼 만든다. Beat/Bar 경계를 가로지르는 duration과 syncopation을 읽을 때 중요하다.
+Tie는 **같은 pitch**의 두 음을 이어 하나의 지속음처럼 만든다. Beat/Bar 경계를 가로지르는 duration과 syncopation을 읽을 때 중요하다. 서로 다른 pitch를 부드럽게 연결하는 slur와 구분한다.
 
 ## 6. Beam과 Grouping
 Eighth/Sixteenth note의 beam은 단순 장식이 아니라 beat grouping을 읽는 데 도움을 준다. 같은 onset/duration 데이터라도 사람이 읽기 쉬운 notation은 meter 구조를 드러내야 한다.
@@ -110,7 +112,7 @@ Chord Symbol은 정확한 voicing 전체를 지정하지 않는 경우가 많다
 3. Dot과 Tie를 사용해 syncopated rhythm을 적는다.
 4. Straight eighth와 triplet을 MIDI로 입력해 비교한다.
 5. 간단한 Melody + Chord Symbol Lead Sheet를 만든다.
-6. MIDI pitch와 enharmonic spelling이 다른 예를 세 개 찾는다.
+6. 같은 sounding pitch가 서로 다른 enharmonic spelling을 가져야 하는 예를 세 개 찾는다.
 ```
 
 ## DohaStudio 연결
@@ -118,6 +120,8 @@ MIDI 중심 데이터에서는 pitch number만으로 소리를 재생할 수 있
 
 ## 완료 체크
 - [ ] Sharp/Flat/Natural과 Enharmonic Spelling을 설명한다.
+- [ ] 마디 accidental과 Key Signature의 역할을 구분한다.
+- [ ] Tie와 Slur를 구분한다.
 - [ ] Key Signature와 tonal center를 구분한다.
 - [ ] 3/4와 6/8의 기본 grouping 차이를 설명한다.
 - [ ] Dot/Tie/Tuplet을 읽고 입력했다.
