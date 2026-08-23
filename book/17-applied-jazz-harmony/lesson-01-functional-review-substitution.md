@@ -3,17 +3,19 @@
 ## 1. 기능화성 다시 보기
 화음을 이름보다 기능으로 묶어 듣는다.
 
+이 책의 기본 기능 표기는 Part 03과 맞춰 `Tonic (T) / Predominant (PD) / Dominant (D)`를 기준으로 한다. 재즈 화성학 문헌에서는 Predominant 영역을 넓게 `Subdominant (SD) family`라고 부르는 경우도 있으므로, 이 Part에서는 두 용어가 겹치는 문맥을 명시해서 사용한다.
+
 ```text
-Tonic (T)        = 안정 / 귀환
-Subdominant (SD) = 이동 / 전개 / Dominant 준비
-Dominant (D)     = 긴장 / Tonic으로의 추진
+Tonic (T)         = 안정 / 귀환
+Predominant (PD)  = 이동 / 전개 / Dominant 준비
+Dominant (D)      = 긴장 / Tonic으로의 추진
 ```
 
 C Major에서 대표 예시는 다음과 같다.
 
 ```text
 T  : Cmaj7, Am7, Em7
-SD : Dm7, Fmaj7
+PD : Dm7, Fmaj7
 D  : G7, Bm7b5(맥락에 따라 dominant family로 연결)
 ```
 
@@ -51,7 +53,7 @@ G7 → Db7  (tritone substitution, 자세한 내용은 Part 03/후속 Lesson 참
 ```text
 A. 원형
 B. tonic substitute 변경
-C. subdominant family 변경
+C. predominant/subdominant-family 변경
 D. dominant substitute 변경
 ```
 
