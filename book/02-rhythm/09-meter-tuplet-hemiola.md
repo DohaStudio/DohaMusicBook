@@ -57,10 +57,10 @@ ONE-la-li TWO-la-li
 6/8:  ONE la li | TWO la li
 ```
 
-같은 note onset을 accent만 바꾸어 3/4와 6/8처럼 들리게 해 본다.
+같은 onset 집합이라도 accent와 grouping을 바꾸면 3/4와 6/8의 체감이 달라질 수 있다.
 
 ## 5. Tuplet
-Tuplet은 정상 subdivision과 다른 수로 시간을 나눈다.
+Tuplet은 정상적인 beat division과 다른 수로 시간을 나누는 표기/리듬 구조다.
 
 가장 기본적인 triplet:
 
@@ -70,7 +70,7 @@ Straight eighth: 2 divisions
 Triplet:          3 divisions
 ```
 
-Quintuplet/Septuplet도 가능하지만 처음에는 triplet과 duplet-in-compound-meter를 확실히 듣는 것이 우선이다.
+Compound meter에서는 반대로 원래 3분할되는 beat를 2개로 나누는 duplet이 자주 쓰인다.
 
 ## 6. Swing과 Triplet은 동일하지 않다
 Swing을 교육할 때 triplet grid로 근사하는 경우가 있지만 실제 swing ratio는 tempo, performer, genre에 따라 달라진다.
@@ -84,12 +84,21 @@ Swing = 반드시 정확한 2:1 triplet ratio
 로 고정하지 않는다.
 
 ## 7. Hemiola
-Hemiola는 기존 meter 위에서 accent grouping이 잠시 다른 큰 묶음으로 들리는 현상이다. 대표적으로 triple 계열 문맥에서 3+3 대신 2+2+2 같은 accent 관계가 부각될 수 있다.
+Hemiola는 대표적으로 **세 개의 동일한 시간 단위를 두 묶음으로 느끼던 흐름과, 같은 시간 범위를 두 개의 큰 단위가 세 묶음으로 재해석하는 3:2 관계**에서 나타나는 metric/accent reinterpretation이다.
 
-핵심은 time signature가 반드시 바뀌지 않아도 **청감상의 grouping이 재해석될 수 있다**는 것이다.
+6/8 또는 두 마디의 3/4 같은 문맥에서 다음과 같이 들을 수 있다.
+
+```text
+기본 grouping:  3 + 3
+hemiola 느낌:   2 + 2 + 2
+```
+
+즉 같은 여섯 eighth-note span이 `두 개의 3분할 beat`와 `세 개의 2분할 accent` 사이에서 다르게 조직되는 것이다. Time Signature가 반드시 바뀌는 것은 아니다.
+
+Hemiola라는 용어는 역사적/분석 문맥에 따라 조금 다르게 쓰일 수 있으므로, 실제 분석에서는 `어떤 pulse hierarchy가 어떤 3:2 관계로 재해석되는가`를 구체적으로 기록한다.
 
 ## 8. Cross-Rhythm과 Polyrhythm
-Cross-Rhythm은 기존 meter와 충돌하거나 가로지르는 accent pattern을 강조하는 관점이다. Polyrhythm은 서로 다른 rhythmic division/grouping이 동시에 유지되는 더 넓은 상황을 가리킬 수 있다.
+Cross-Rhythm은 현재 meter의 기본 accent/grouping과 충돌하거나 가로지르는 반복 패턴을 강조하는 관점이다. Polyrhythm은 서로 다른 rhythmic division/grouping이 동시에 유지되는 더 넓은 상황을 가리킬 수 있다.
 
 용어 경계는 문헌마다 다소 다르게 사용될 수 있으므로, 실제 분석에서는 각 layer의 cycle과 realignment 지점을 구체적으로 기록한다.
 
@@ -101,7 +110,7 @@ Cross-Rhythm은 기존 meter와 충돌하거나 가로지르는 accent pattern�
 7/8 = 2+2+3 / 3+2+2 / 2+3+2 등
 ```
 
-같은 7/8이라도 grouping에 따라 groove가 달라진다.
+같은 7/8이라도 grouping에 따라 groove가 달라진다. 모든 odd meter가 반드시 additive하게 느껴지는 것은 아니지만, 입문에서는 accent grouping을 파악하는 좋은 출발점이다.
 
 ## 10. 실습
 ```text
@@ -119,5 +128,5 @@ Cross-Rhythm은 기존 meter와 충돌하거나 가로지르는 accent pattern�
 - [ ] Simple/Compound Meter를 설명한다.
 - [ ] 3/4와 6/8을 청감과 grouping으로 구분한다.
 - [ ] Tuplet과 Swing을 동일시하지 않는다.
-- [ ] Hemiola의 accent regrouping을 만들었다.
+- [ ] Hemiola를 3:2 metric/accent reinterpretation으로 설명한다.
 - [ ] 7/8을 두 grouping으로 연주/입력했다.
