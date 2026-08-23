@@ -88,6 +88,21 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 
 현재 spot-check 범위에서 병합을 막는 명백한 이론 오류는 남아 있지 않다. 세부 용어 표기 통일은 P1에서 계속 정리한다.
 
+### CURRENT / FOUNDATION / TARGET review
+
+2026-08-23 기준 DohaMusic, DohaLM, DohaAudio, DohaVocal의 `develop` README와 authority를 대조했다. 상세 기록은 [`current-foundation-target-validation.md`](current-foundation-target-validation.md)에 남겼다.
+
+핵심 판정:
+- DohaMusic의 Composition Read Workspace/Timeline/Track lane/WAV playback을 CURRENT로 설명한 부분은 일치한다.
+- WorkingComposition Track/Clip은 설계/Foundation이며 schema/API/UI가 구현된 것으로 쓰지 않는다.
+- MIDI Track/Piano Roll, SoundFont engine, Mixer/Automation은 CURRENT가 아니다.
+- DohaLM REST/SSE MVP와 runtime 이력은 존재하지만 approved artifact와 DohaMusic production integration은 CURRENT가 아니다.
+- DohaAudio는 Runtime/API와 Dataset/Training governance foundation은 있으나 실제 production music/stem/analysis model과 실제 Training은 CURRENT가 아니다.
+- DohaVocal은 metadata-only Fake Runtime foundation이며 실제 Singing/Conversion/Correction model은 CURRENT가 아니다.
+- Provider 책임 경계와 DohaMusic orchestration 원칙은 원본 저장소와 일치한다.
+
+현재 범위에서 P0 수준의 구현 상태 오기록은 발견되지 않았다.
+
 ### 추가 검수가 필요한 항목
 
 - [x] 전체 변경 범위의 README/Study Map/Starter Set Markdown navigation 확인
@@ -98,7 +113,7 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 - [x] Jazz Harmony의 chord-scale / altered tension 핵심 설명 정확성 spot-check
 - [ ] Part 03과 Part 17의 중복 범위를 최소화
 - [ ] Part 16의 Rights 설명이 Part 10과 충돌하지 않는지 검수
-- [ ] CURRENT / FOUNDATION / TARGET 문장을 최신 DohaStudio source와 대조
+- [x] CURRENT / FOUNDATION / TARGET 문장을 최신 DohaStudio source와 대조
 
 ## 4. 내용 검수 우선순위
 
@@ -135,7 +150,7 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 [x] navigation checked
 [x] MIDI checked
 [x] theory spot-check passed
-[ ] CURRENT/FOUNDATION/TARGET checked
+[x] CURRENT/FOUNDATION/TARGET checked
 [ ] rights/provenance checked
 [x] main behind = 0
 [ ] GitHub mergeability rechecked on final head
