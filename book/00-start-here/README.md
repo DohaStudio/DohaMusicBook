@@ -22,6 +22,12 @@ DohaStudio에서 표현/생성/재생한다
 다시 만든다
 ```
 
+## 시작 전 보조 기초
+
+- [Music Notation Foundation](lesson-music-notation-foundation.md) — Clef, Staff, Note/Rest, Repeat, Articulation을 악보와 Piano Roll 관점으로 연결한다.
+
+악보 읽기는 이 책의 선행 자격이 아니다. 필요할 때 이 Lesson을 참고하고, 반드시 소리/MIDI와 함께 확인한다.
+
 ## 1차 학습 — 곡을 만들 수 있게 되기
 
 1. Song Form
