@@ -10,15 +10,19 @@
 4. [Lesson 04 — Reverb, Delay, Stereo, Automation, Bus](lesson-04-space-automation-bus.md)
 5. [Lesson 05 — Mixing, Mastering, Reference Track](lesson-05-mixing-mastering-reference.md)
 6. [Lesson 06 — DohaStudio Audio Production Workflow](lesson-06-dohastudio-audio-workflow.md)
+7. [Lesson 07 — Vocal Recording과 Correction](lesson-07-vocal-recording-correction.md)
+8. [Lesson 08 — Distortion과 Creative Effects](lesson-08-distortion-creative-effects.md)
 
 ## 이 Part의 전체 흐름
 
 ```text
-Source Audio
+Source / Recording
+→ Take / Comp / Correction
 → Editing
 → Gain / Pan
 → EQ
 → Compression
+→ Distortion / Creative FX
 → Reverb / Delay
 → Automation / Bus
 → Mix
@@ -31,9 +35,11 @@ Plugin을 많이 사용하는 것이 목표가 아니다. 매 처리마다 `문�
 
 ## 핵심 원칙
 
+- 좋은 Take를 확보한 뒤 필요한 Correction을 한다.
 - Editing 문제를 Mixing으로 숨기지 않는다.
 - Arrangement 문제를 EQ만으로 해결하려 하지 않는다.
 - 더 큰 소리를 더 좋은 소리로 착각하지 않는다.
+- Corrective processing과 Creative processing을 구분한다.
 - Mix 문제를 Mastering에서 전부 고치지 않는다.
 - Reference는 복제 대상이 아니라 균형 확인용 기준점이다.
 - 원본과 처리 결과를 모두 보존한다.
@@ -48,8 +54,10 @@ study/audio-production/
 ├─ 04-space-automation-bus.md
 ├─ 05-mix-master-reference.md
 ├─ 06-translation-check.md
-├─ 07-dohastudio-audio-trace.md
-└─ 08-product-gap-notes.md
+├─ 07-vocal-recording-correction.md
+├─ 08-distortion-creative-effects.md
+├─ 09-dohastudio-audio-trace.md
+└─ 10-product-gap-notes.md
 ```
 
 ## DohaStudio 연결
@@ -68,9 +76,11 @@ study/audio-production/
 ## Part 09 완료 기준
 
 - Digital Audio 기본 규격을 설명한다.
+- Recording/Comping/Pitch·Timing Correction의 역할을 구분한다.
 - Editing/Mixing/Mastering을 구분한다.
 - Gain/Pan/EQ로 기본 Balance를 만든다.
 - Compressor의 Attack/Release 변화를 듣는다.
+- Distortion/Saturation을 level-aware A/B한다.
 - Reverb/Delay/Automation/Bus를 목적에 맞게 사용한다.
 - Reference Track과 여러 재생 환경으로 결과를 점검한다.
-- 원본→Mix→Master lineage와 수정 이유를 기록한다.
+- 원본→수정→Mix→Master lineage와 수정 이유를 기록한다.

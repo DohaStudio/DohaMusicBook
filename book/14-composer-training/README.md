@@ -10,6 +10,7 @@
 4. [Lesson 04 — AI Candidate를 고르는 귀](lesson-04-ai-candidate-judgment.md)
 5. [Lesson 05 — Monthly Demo와 성장 Review](lesson-05-monthly-demo-review.md)
 6. [Lesson 06 — Portfolio와 Professional Practice](lesson-06-portfolio-professional-practice.md)
+7. [Lesson 07 — 한 곡을 귀로 끝까지 읽는 Integrated Listening Process](lesson-07-integrated-ear-reading.md)
 
 ## 기본 훈련 주기
 
@@ -32,6 +33,9 @@ Every 3 months
 
 ## Weekly 원칙
 완성곡 수보다 비교 가능한 Version을 만든다. Motif 5개, 같은 Melody의 Harmony 3개, 같은 Harmony의 Groove 3개처럼 한 요소를 바꾸고 결과를 듣는다.
+
+## Integrated Listening 원칙
+각 요소를 따로 배운 뒤에는 한 곡을 `Form → Rhythm → Tonal Center → Bass/Harmony → Melody → Arrangement → Tool Check` 순서로 다시 읽는다. 분석 도구는 사람의 첫 추정 이후에 사용한다.
 
 ## AI 사용 원칙
 AI 후보를 하나만 생성해 승인하지 않는다. 최소 두 개 이상 비교하고 Melody/Harmony/Groove/Structure/Sound/Originality/Intent Fit을 기록한다. AI가 만든 것을 고르는 능력도 작곡 훈련의 일부로 본다.
@@ -57,6 +61,7 @@ study/composer-training/
 ├─ weekly/
 ├─ monthly-demos/
 ├─ ear-training/
+├─ integrated-listening/
 ├─ ai-candidate-reviews/
 ├─ retrospectives/
 ├─ product-gaps/
@@ -71,6 +76,7 @@ study/composer-training/
 - Motif를 여러 방식으로 발전시키는가?
 - Chorus Hook을 의도적으로 설계하는가?
 - Harmony 선택 이유를 설명하는가?
+- Bass movement와 Cadence를 귀로 추적하는가?
 - Arrangement Density를 조절하는가?
 - AI 후보를 더 엄격하게 거르는가?
 - Mix 문제와 작곡 문제를 구분하는가?
@@ -83,6 +89,7 @@ study/composer-training/
 [ ] Daily listening 기록이 누적됐다.
 [ ] 6주 Composition Drill Cycle을 수행했다.
 [ ] 최소 3개의 Monthly Demo가 있다.
+[ ] 한 곡을 Integrated Listening Process로 분석했다.
 [ ] AI Candidate 선택 이유를 음악 용어로 설명한다.
 [ ] 반복되는 자신의 약점을 찾았다.
 [ ] DohaStudio Product Gap과 개인 Skill Gap을 구분한다.
