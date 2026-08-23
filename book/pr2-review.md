@@ -64,6 +64,30 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 
 각 세트의 original/rhythm/velocity/voicing/transpose-plus3 파일을 다시 생성하고 parse 및 pitch-class를 검증했다. 상세 기록은 [`midi-validation-findings.md`](midi-validation-findings.md)에 남긴다.
 
+### Theory spot-check에서 확인·수정
+
+기본 화성학과 재즈/응용 화성학의 고위험 개념을 우선 검수했다.
+
+검수 항목:
+- interval semitone 구조
+- triad / seventh chord quality
+- cadence 정의
+- scale gravity / tonal center
+- diminished seventh의 대칭성과 기능
+- available-note-scale의 context-sensitive 접근
+- guide tones / shell voicing
+- altered dominant / altered scale
+- tritone substitution
+- modal harmony / Dorian characteristic degree
+
+수정 사항:
+- Altered Dominant Lesson에서 `#11/b5`, `b13/#5`를 단순 동의어처럼 보일 수 있던 표현을 `b5/#11`, `#5/b13`의 enharmonic/context 관계로 명확히 했다.
+- `G7(#9) → C minor`처럼 특정 altered tension을 특정 tonic quality에 고정하는 인상을 제거했다.
+- Altered scale을 melodic minor 7th mode / Super-Locrian과 연결하고 실제 pitch collection을 명시했다.
+- Upper Structure Triad를 고정 공식이 아니라 lower shell 대비 tension을 계산하는 voicing 도구로 명확히 했다.
+
+현재 spot-check 범위에서 병합을 막는 명백한 이론 오류는 남아 있지 않다. 세부 용어 표기 통일은 P1에서 계속 정리한다.
+
 ### 추가 검수가 필요한 항목
 
 - [x] 전체 변경 범위의 README/Study Map/Starter Set Markdown navigation 확인
@@ -71,7 +95,7 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 - [x] 57개 MIDI(original/variation/ear-training)의 생성/parse/readability 검증
 - [x] 각 MIDI의 note content와 문서 chord/harmonic intent 대조 및 발견된 불일치 수정
 - [ ] 기본 화성학 용어의 한글/영문 표기 일관성 검수
-- [ ] Jazz Harmony의 chord-scale / altered tension 설명 정확성 검수
+- [x] Jazz Harmony의 chord-scale / altered tension 핵심 설명 정확성 spot-check
 - [ ] Part 03과 Part 17의 중복 범위를 최소화
 - [ ] Part 16의 Rights 설명이 Part 10과 충돌하지 않는지 검수
 - [ ] CURRENT / FOUNDATION / TARGET 문장을 최신 DohaStudio source와 대조
@@ -110,7 +134,7 @@ Starter progression 06~08에서 study sheet와 초기 MIDI Key가 달랐다.
 [ ] P0 findings = 0
 [x] navigation checked
 [x] MIDI checked
-[ ] theory spot-check passed
+[x] theory spot-check passed
 [ ] CURRENT/FOUNDATION/TARGET checked
 [ ] rights/provenance checked
 [x] main behind = 0
