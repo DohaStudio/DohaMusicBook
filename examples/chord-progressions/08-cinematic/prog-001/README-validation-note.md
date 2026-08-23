@@ -1,1 +1,0 @@
-Temporary validation note: this progression's MIDI set is regenerated to match the study sheet key D minor (`Dm–Bb–Gm–A`). This file can be removed after binary replacement is verified.
