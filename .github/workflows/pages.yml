@@ -1,5 +1,7 @@
 name: Build and deploy DohaMusicBook
 
+# GitHub Pages source: GitHub Actions
+
 on:
   push:
     branches: [main]
