@@ -1,6 +1,6 @@
 # Part 09 — Audio Production: 녹음에서 Mix와 Master까지
 
-> 학습 목표: 작곡 이후의 Audio Editing, Mixing, Mastering을 구분하고 실제 소리를 수정한 이유를 귀와 기록으로 설명한다.
+> 학습 목표: 작곡 이후의 Audio Editing, Mixing, Mastering을 구분하고 실제 소리를 수정한 이유를 귀, 기본 신호 원리, 기록으로 설명한다.
 
 ## 공부 순서
 
@@ -12,6 +12,7 @@
 6. [Lesson 06 — DohaStudio Audio Production Workflow](lesson-06-dohastudio-audio-workflow.md)
 7. [Lesson 07 — Vocal Recording과 Correction](lesson-07-vocal-recording-correction.md)
 8. [Lesson 08 — Distortion과 Creative Effects](lesson-08-distortion-creative-effects.md)
+9. [Lesson 09 — Audio Physics for Producers](lesson-09-audio-physics-producers.md)
 
 ## 이 Part의 전체 흐름
 
@@ -28,20 +29,23 @@ Source / Recording
 → Mix
 → Master
 → Reference / Translation Review
+→ Audio Physics / Measurement Review
 → Final Export
 ```
 
-Plugin을 많이 사용하는 것이 목표가 아니다. 매 처리마다 `문제 → 판단 → 변경 → A/B 결과`를 기록한다.
+Plugin을 많이 사용하는 것이 목표가 아니다. 매 처리마다 `문제 → 판단 → 변경 → level-aware A/B 결과`를 기록한다.
 
 ## 핵심 원칙
 
 - 좋은 Take를 확보한 뒤 필요한 Correction을 한다.
 - Editing 문제를 Mixing으로 숨기지 않는다.
-- Arrangement 문제를 EQ만으로 해결하려 하지 않는다.
+- Arrangement/Masking 문제를 EQ만으로 해결하려 하지 않는다.
 - 더 큰 소리를 더 좋은 소리로 착각하지 않는다.
 - Corrective processing과 Creative processing을 구분한다.
 - Mix 문제를 Mastering에서 전부 고치지 않는다.
 - Reference는 복제 대상이 아니라 균형 확인용 기준점이다.
+- Phase와 Polarity를 동일 개념으로 취급하지 않는다.
+- 측정값 하나만으로 음악의 품질을 결정하지 않는다.
 - 원본과 처리 결과를 모두 보존한다.
 
 ## 최종 학습 기록
@@ -56,8 +60,9 @@ study/audio-production/
 ├─ 06-translation-check.md
 ├─ 07-vocal-recording-correction.md
 ├─ 08-distortion-creative-effects.md
-├─ 09-dohastudio-audio-trace.md
-└─ 10-product-gap-notes.md
+├─ 09-audio-physics.md
+├─ 10-dohastudio-audio-trace.md
+└─ 11-product-gap-notes.md
 ```
 
 ## DohaStudio 연결
@@ -82,5 +87,8 @@ study/audio-production/
 - Compressor의 Attack/Release 변화를 듣는다.
 - Distortion/Saturation을 level-aware A/B한다.
 - Reverb/Delay/Automation/Bus를 목적에 맞게 사용한다.
+- Frequency/Amplitude/Phase와 fundamental/harmonic의 기초를 설명한다.
+- Headroom/Clipping/Noise Floor와 Masking을 설명한다.
+- Nyquist/Aliasing, Buffer/Latency의 기본 trade-off를 설명한다.
 - Reference Track과 여러 재생 환경으로 결과를 점검한다.
 - 원본→수정→Mix→Master lineage와 수정 이유를 기록한다.

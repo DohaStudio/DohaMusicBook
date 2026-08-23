@@ -25,8 +25,9 @@ DohaStudio에서 표현/생성/재생한다
 ## 시작 전 보조 기초
 
 - [Music Notation Foundation](lesson-music-notation-foundation.md) — Clef, Staff, Note/Rest, Repeat, Articulation을 악보와 Piano Roll 관점으로 연결한다.
+- [Music Notation Foundation II](lesson-music-notation-foundation-ii.md) — Accidental, Enharmonic Spelling, Key/Time Signature, Dot/Tie/Tuplet, Dynamics, Lead Sheet를 보강한다.
 
-악보 읽기는 이 책의 선행 자격이 아니다. 필요할 때 이 Lesson을 참고하고, 반드시 소리/MIDI와 함께 확인한다.
+악보 읽기는 이 책의 선행 자격이 아니다. 필요할 때 이 Lesson들을 참고하고, 반드시 소리/MIDI와 함께 확인한다.
 
 ## 1차 학습 — 곡을 만들 수 있게 되기
 
@@ -43,13 +44,14 @@ DohaStudio에서 표현/생성/재생한다
 ## 2차 학습 — 곡을 더 좋게 만들기
 
 1. Chord Function / Harmonic Rhythm
-2. Non-Chord Tone
-3. Motif Development
+2. Voice Leading / Non-Chord Tone
+3. Motif Development / Phrase Structure
 4. Reharmonization
 5. Section Contrast
-6. Groove
-7. Layering / Timbre / Register
-8. Mix 기초
+6. Groove / Meter Deep Dive
+7. Layering / Timbre / Register / Instrument Range
+8. Mix 기초 / Audio Physics
+9. Systematic Ear Training / Audiation
 
 목표는 `왜 이 곡이 약하게 들리는가`를 음악 용어로 설명하고 수정하는 것이다.
 

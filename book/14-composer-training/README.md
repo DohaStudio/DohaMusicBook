@@ -1,6 +1,6 @@
 # Part 14 — 작곡가 훈련 시스템
 
-> 목표: 지식을 읽고 끝내지 않고 `듣기 → 분석 → 작곡 → 비교 → 완성 → 회고`를 반복해 실제 음악적 판단력을 키운다.
+> 목표: 지식을 읽고 끝내지 않고 `듣기 → 분석 → 작곡 → 비교 → 완성 → 회고`를 반복해 실제 음악적 판단력과 audiation을 키운다.
 
 ## 공부 순서
 
@@ -11,15 +11,17 @@
 5. [Lesson 05 — Monthly Demo와 성장 Review](lesson-05-monthly-demo-review.md)
 6. [Lesson 06 — Portfolio와 Professional Practice](lesson-06-portfolio-professional-practice.md)
 7. [Lesson 07 — 한 곡을 귀로 끝까지 읽는 Integrated Listening Process](lesson-07-integrated-ear-reading.md)
+8. [Lesson 08 — Systematic Ear Training & Audiation](lesson-08-systematic-ear-training-audiation.md)
 
 ## 기본 훈련 주기
 
 ```text
 Daily
-  └─ 1곡 집중 청취 / 짧은 Motif·Rhythm 연습
+  ├─ 1곡 집중 청취 / 짧은 Motif·Rhythm 연습
+  └─ 20분 Ear Training / Audiation
 
 Weekly
-  └─ 한 가지 작곡 기술 집중 Drill
+  └─ 한 가지 작곡 기술 집중 Drill + 짧은 transcription
 
 Monthly
   └─ 60~180초 Demo 완성 + Retrospective
@@ -30,6 +32,8 @@ Every 3 months
 
 ## Daily 원칙
 하루 한 곡을 15~30분 분석한다. 곡 전체를 한 번에 이해하려 하지 않고 Song Form, Rhythm, Harmony, Melody, Lyrics, Arrangement, Mix 중 필요한 관점을 나눠 듣는다.
+
+Ear Training에서는 `Hear → Guess → Sing/Tap/Play → Write → Verify → Correct → Hear again` 순서를 사용한다. 자동 분석 결과를 먼저 보지 않는다.
 
 ## Weekly 원칙
 완성곡 수보다 비교 가능한 Version을 만든다. Motif 5개, 같은 Melody의 Harmony 3개, 같은 Harmony의 Groove 3개처럼 한 요소를 바꾸고 결과를 듣는다.
@@ -61,6 +65,10 @@ study/composer-training/
 ├─ weekly/
 ├─ monthly-demos/
 ├─ ear-training/
+│  ├─ rhythm/
+│  ├─ scale-degree-interval/
+│  ├─ chord-bass/
+│  └─ transcription/
 ├─ integrated-listening/
 ├─ ai-candidate-reviews/
 ├─ retrospectives/
@@ -71,12 +79,13 @@ study/composer-training/
 ## 성장 지표
 숫자 하나로 작곡 실력을 평가하지 않는다. 다음 변화를 장기간 본다.
 
-- Song Form을 더 빨리 듣는가?
-- Groove를 구체적으로 설명하는가?
+- Song Form/Phrase를 더 빨리 듣는가?
+- Groove와 Meter grouping을 구체적으로 설명하는가?
+- Scale Degree/Interval을 내부적으로 예상하고 노래할 수 있는가?
+- Bass line과 Cadence를 먼저 추적하는가?
 - Motif를 여러 방식으로 발전시키는가?
 - Chorus Hook을 의도적으로 설계하는가?
-- Harmony 선택 이유를 설명하는가?
-- Bass movement와 Cadence를 귀로 추적하는가?
+- Harmony/Voice Leading 선택 이유를 설명하는가?
 - Arrangement Density를 조절하는가?
 - AI 후보를 더 엄격하게 거르는가?
 - Mix 문제와 작곡 문제를 구분하는가?
@@ -90,6 +99,8 @@ study/composer-training/
 [ ] 6주 Composition Drill Cycle을 수행했다.
 [ ] 최소 3개의 Monthly Demo가 있다.
 [ ] 한 곡을 Integrated Listening Process로 분석했다.
+[ ] Scale Degree/Interval/Chord/Bass Ear Training 기록이 있다.
+[ ] 짧은 Melody/Harmony transcription과 오답 기록이 있다.
 [ ] AI Candidate 선택 이유를 음악 용어로 설명한다.
 [ ] 반복되는 자신의 약점을 찾았다.
 [ ] DohaStudio Product Gap과 개인 Skill Gap을 구분한다.
