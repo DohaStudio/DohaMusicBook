@@ -1,1 +1,0 @@
-Temporary validation note: this progression's MIDI set is regenerated to match the study sheet key center E (`E–D–A`). This file can be removed after binary replacement is verified.
