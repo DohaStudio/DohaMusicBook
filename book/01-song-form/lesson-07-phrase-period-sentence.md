@@ -3,7 +3,7 @@
 ## 학습 목표
 - Section보다 작은 시간 구조를 분석한다.
 - Phrase의 시작, 지속, 종결을 Cadence와 Melody/Harmony 변화로 찾는다.
-- Period와 Sentence를 작곡 도구로 이해한다.
+- Period와 Sentence를 전통적 정의와 현대 Pop 응용으로 구분해 이해한다.
 - 4+4, 2+2+4 같은 비율을 공식이 아니라 출발점으로 사용한다.
 
 ## 1. Macro Form과 Micro Form
@@ -31,14 +31,16 @@ Phrase 경계의 단서:
 - Register 또는 texture 변화
 
 ## 3. Antecedent와 Consequent
-Period에서는 앞 Phrase가 질문처럼 열리고 뒤 Phrase가 더 강하게 닫히는 관계를 만들 수 있다.
+전통적인 Period에서는 두 Phrase가 기능적으로 짝을 이룬다.
 
 ```text
-Antecedent: 상대적으로 열린 종결
-Consequent: 상대적으로 강한 종결
+Antecedent: 상대적으로 약하거나 열린 cadence
+Consequent: 상대적으로 더 강한 cadence
 ```
 
-전형적으로 같은 시작 Motif를 공유할 수 있지만, 모든 Pop phrase를 Period라고 부르지는 않는다. 핵심은 `앞의 기대 → 뒤의 더 강한 completion` 관계를 듣는 것이다.
+전형적인 **parallel period**에서는 두 Phrase가 유사한 basic idea로 시작한다. 그러나 모든 period가 같은 시작을 공유하는 것은 아니며 contrasting period도 가능하다.
+
+따라서 `같은 Motif가 두 번 나오면 Period`라고 판단하지 않고, 두 Phrase의 시작 관계와 cadence strength를 함께 본다.
 
 ## 4. Period
 대표적인 8마디 모델:
@@ -48,20 +50,25 @@ Bars 1–4  Antecedent
 Bars 5–8  Consequent
 ```
 
-두 Phrase가 비슷한 시작을 공유하고 서로 다른 cadence strength를 가질 수 있다.
+Period의 핵심은 단순한 4+4 길이보다 **두 Phrase가 question/answer에 가까운 종결 관계를 만든다**는 점이다.
 
-Pop에서는 exact classical period보다 `question/answer`, `call/response`, `open/closed`라는 청감 관계로 응용하는 것이 실용적이다.
+Pop에서는 classical cadence label이 분명하지 않아도 `open → more closed`, `setup → answer` 관계로 응용해 들을 수 있다. 다만 모든 8마디 question/answer를 엄밀한 classical period라고 부르지는 않는다.
 
 ## 5. Sentence
-Sentence의 대표적 사고는 `작은 아이디어 제시 → 반복/변형 → 더 긴 continuation → cadence`다.
+Classical sentence의 대표적 모델은 8마디 안에서 **Presentation + Continuation** 기능으로 설명할 수 있다.
 
 ```text
+Presentation
 2 bars: basic idea
-2 bars: repetition / variation
-4 bars: continuation + fragmentation + cadence
+2 bars: repetition / varied repetition
+
+Continuation
+4 bars: fragmentation / acceleration / sequence / harmonic motion + cadence
 ```
 
-이것을 고정 공식으로 쓰지 않는다. 중요한 것은 **초반의 명확한 아이디어가 후반에서 더 빠르게 분해·진행되며 종결을 향하는 에너지**다.
+중요한 것은 2+2+4 숫자 자체보다 초반에 아이디어를 확립하고, 후반에 material을 압축·분해·진행시켜 cadence를 향하는 기능적 대비다.
+
+Pop에서는 정확한 classical sentence가 아니더라도 이 `establish → intensify/fragment → arrive` 원리를 Phrase 설계 도구로 사용할 수 있다.
 
 ## 6. Fragmentation과 Continuation
 Motif 전체를 반복하지 않고 일부만 짧게 반복하면 사건 밀도가 올라갈 수 있다.
@@ -74,13 +81,13 @@ Sequence:        D E
 Cadence
 ```
 
-Pre-Chorus나 Phrase 후반의 추진력을 만드는 데 사용할 수 있다.
+Continuation에서는 fragmentation 외에도 harmonic rhythm 증가, sequence, shorter unit, melodic acceleration 등이 함께 나타날 수 있다.
 
 ## 7. Phrase Extension과 Elision
 실제 곡에서는 4+4가 항상 정확히 유지되지 않는다.
 
-- Extension: 종결을 늦추거나 후속 material을 붙여 phrase를 늘린다.
-- Elision/Overlap: 한 phrase의 종결이 다음 phrase의 시작과 겹친다.
+- Extension: 예상된 종결 뒤 또는 종결을 향하는 과정에 material을 더해 phrase를 늘린다.
+- Elision/Overlap: 한 formal function의 종결 지점이 다음 unit의 시작과 겹친다.
 - Truncation: 예상보다 짧게 닫아 긴장이나 놀라움을 만든다.
 
 비대칭은 오류가 아니다. 예상 길이와 실제 길이의 차이가 표현 효과를 만든다.
@@ -95,7 +102,7 @@ Pre-Chorus나 Phrase 후반의 추진력을 만드는 데 사용할 수 있다.
 
 ```text
 A. Question / Answer형 4+4
-B. Basic Idea → Repetition → Continuation형 2+2+4
+B. Presentation → Continuation형 2+2+4
 ```
 
 비교:
@@ -103,6 +110,7 @@ B. Basic Idea → Repetition → Continuation형 2+2+4
 - Cadence strength
 - Motif repetition 정도
 - 후반 event density
+- Harmonic rhythm 변화
 - Lyrics breath와 맞는가
 - Chorus hook으로 연결되는가
 
@@ -123,7 +131,8 @@ Motif
 ## 완료 체크
 - [ ] Section과 Phrase를 구분한다.
 - [ ] 실제 곡에서 Phrase 경계를 표시했다.
-- [ ] Question/Answer형 Period를 만들었다.
-- [ ] Basic Idea–Continuation형 Sentence를 만들었다.
+- [ ] Antecedent/Consequent의 cadence-strength 관계를 설명한다.
+- [ ] Parallel Period와 단순 반복을 구분한다.
+- [ ] Presentation/Continuation형 Sentence를 만들었다.
 - [ ] Fragmentation으로 후반 밀도를 바꿨다.
 - [ ] 비대칭 Phrase를 오류가 아니라 표현 선택으로 분석한다.
