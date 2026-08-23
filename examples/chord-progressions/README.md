@@ -58,6 +58,28 @@ Progression
 
 장르 폴더는 절대적인 화성 분류가 아니다. 학습 중 어떤 맥락에서 사용했는지 찾기 쉽게 하기 위한 태그에 가깝다. 같은 진행을 여러 장르에서 사용할 수 있다.
 
+## Naming Convention
+Starter progression은 다음 규칙을 사용한다.
+
+```text
+<category>/prog-00N-<roman-slug>.md   # study sheet
+<category>/prog-00N/                  # MIDI variation folder
+```
+
+예:
+```text
+examples/chord-progressions/03-pop/
+├─ prog-003-vi-iv-i-v.md
+└─ prog-003/
+   ├─ original.mid
+   ├─ variation-rhythm.mid
+   ├─ variation-velocity.mid
+   ├─ variation-voicing.mid
+   └─ variation-transpose-plus3.mid
+```
+
+`prog-00N` ID는 study sheet와 MIDI folder 사이에서 동일하게 유지한다. Roman numeral slug는 사람이 내용을 찾기 위한 설명용이며 MIDI folder 이름에는 반복하지 않는다.
+
 ## Progression Entry
 각 진행은 다음 정보를 기록한다.
 
@@ -95,14 +117,14 @@ G Instrument/Timbre
 공통 기록에는 [Progression Study Template](progression-template.md)을 사용한다.
 
 ## 실제 MIDI 파일을 추가할 때
+새 progression도 위 Naming Convention을 따른다. MIDI variation 파일은 학습 목적에 따라 추가할 수 있지만 기본 starter set에서는 다음 이름을 우선한다.
+
 ```text
-examples/chord-progressions/03-pop/prog-001/
-├─ README.md
-├─ original.mid
-├─ variation-tempo.mid
-├─ variation-voicing.mid
-├─ variation-groove.mid
-└─ audio-preview/
+original.mid
+variation-rhythm.mid
+variation-velocity.mid
+variation-voicing.mid
+variation-transpose-plus3.mid
 ```
 
 실제 `.mid`와 Audio는 직접 학습하면서 추가한다. 저작권이 있는 상업 도서의 부록 MIDI를 이 저장소에 재배포하지 않는다.
