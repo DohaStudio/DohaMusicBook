@@ -39,14 +39,22 @@ Examples Harmony Ear Training MIDI Library
 ### 정상
 
 - 새 Part 16/17의 진입점이 `book/README.md`에 존재한다.
-- 새 Harmony Lesson의 파일 번호와 README 순서가 연속적이다.
-- Chord Progression Library와 Harmony Ear Training Library의 README가 존재한다.
+- Part 00/02/03/06/08/09/14/16/17 README에서 새 Lesson 진입 경로가 존재한다.
+- Part 17 README가 Lesson 01~16을 모두 가리키며 대상 파일이 존재한다.
+- Chord Progression Library의 Starter Set 8개 링크 대상이 존재한다.
+- Harmony Ear Training Library README와 6개 Practice directory가 존재한다.
 - 상업 도서 companion MIDI를 저장소에 재배포하지 않는 경계가 명시돼 있다.
 - 완성형 MIDI/Piano Roll/SoundFont/Mixer를 CURRENT 기능으로 서술하지 않는다.
 
+### Navigation review에서 발견·수정
+
+- Part 03 README가 새 Lesson 08~10 파일을 갖고 있으면서 공부 순서에는 Lesson 07까지만 노출하고 있었다.
+- Lesson 08~10 링크를 추가하고 Harmony Ear Training Library 진입 링크도 추가했다.
+- Part 03 학습 산출물 번호도 새 Ear Training 단계를 반영해 다시 정렬했다.
+
 ### 추가 검수가 필요한 항목
 
-- [ ] 전체 Markdown 상대 링크를 최종 확인
+- [x] 전체 변경 범위의 README/Study Map/Starter Set Markdown navigation 확인
 - [ ] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인
 - [ ] 57개 MIDI(original/variation/ear-training)의 실제 parse/readability 재확인
 - [ ] 각 MIDI의 note content가 문서의 chord symbol과 일치하는지 대조
@@ -88,12 +96,12 @@ Examples Harmony Ear Training MIDI Library
 
 ```text
 [ ] P0 findings = 0
-[ ] navigation checked
+[x] navigation checked
 [ ] MIDI checked
 [ ] theory spot-check passed
 [ ] CURRENT/FOUNDATION/TARGET checked
 [ ] rights/provenance checked
-[ ] main behind = 0
+[x] main behind = 0
 [ ] GitHub mergeability rechecked on final head
 ```
 
