@@ -41,9 +41,9 @@ C와 E를 유지하고 G만 A로 움직이면 매우 작은 이동으로 연결�
 두 성부의 방향 관계를 구분한다.
 
 - Contrary Motion: 서로 반대 방향
-- Similar Motion: 같은 방향이지만 다른 간격으로 이동
-- Parallel Motion: 같은 방향으로 같은 간격 관계를 유지
-- Oblique Motion: 한 성부는 유지되고 다른 성부만 이동
+- Similar Motion: 같은 방향으로 움직이지만 두 성부 사이의 interval이 달라진다.
+- Parallel Motion: 같은 방향으로 움직이며 두 성부 사이의 interval 관계가 유지된다.
+- Oblique Motion: 한 성부는 유지되고 다른 성부만 이동한다.
 
 현대 작곡에서는 이름을 암기하는 것보다 Bass와 Melody, Inner Voice가 서로 얼마나 독립적으로 움직이는지 듣는 데 사용한다.
 
@@ -51,14 +51,16 @@ C와 E를 유지하고 G만 A로 움직이면 매우 작은 이동으로 연결�
 Tonal harmony에서는 일부 음이 특정 방향으로 강하게 끌리는 경향이 있다.
 
 ### Leading Tone
-Major key의 7th scale degree는 Tonic으로 반음 상승하는 경향이 강하다.
+Major key의 7th scale degree는 기능적인 dominant→tonic 문맥에서 Tonic으로 반음 상승하는 경향이 강하다.
 
 ```text
 B → C  in C major
 ```
 
+모든 7th scale degree가 모든 문맥에서 반드시 위로 해결된다는 규칙은 아니다. Melody direction, inner voice, sequence, modal/tonicization 문맥에 따라 다르게 움직일 수 있다.
+
 ### Chordal 7th
-Dominant seventh 같은 7th chord의 chordal 7th는 전통적인 기능화성에서 아래로 해결되는 경우가 많다.
+Dominant seventh 같은 7th chord의 chordal 7th는 Common-Practice tonal voice leading에서 보통 아래로 순차 해결되는 경향이 있다.
 
 ```text
 G7 = G B D F
@@ -83,14 +85,16 @@ G C E
 모두 C major이지만 Bass, Top Note, spacing이 다르다.
 
 ## 6. Voice Crossing과 Overlap
-Voice Crossing은 낮은 역할의 성부가 높은 역할의 성부보다 위로 넘어가는 현상이다. Voice Overlap은 이전 화음에서 다른 성부가 차지하던 음역을 다음 이동에서 넘어서는 현상이다.
+Voice Crossing은 한 시점에서 원래 아래에 있던 성부가 다른 성부보다 위에 놓이거나, 위 성부가 아래 성부보다 낮게 놓여 성부의 상대적 순서가 뒤바뀌는 현상이다.
 
-전통적인 4성부 쓰기에서는 성부 독립성과 가독성을 위해 제한하지만, 현대 제작에서는 Layer/Texture 목적에 따라 의도적으로 사용할 수 있다.
+Voice Overlap은 연속된 두 화음 사이에서 한 성부가 **이전 화음에서 인접한 다른 성부가 차지했던 음높이보다 더 멀리 넘어가는 것**을 말한다. 예를 들어 Soprano가 이전 Alto 음보다 아래로 내려가거나 Alto가 이전 Soprano 음보다 위로 올라가는 식이다. 현재 화음 안에서 실제 순서가 뒤집히는 Crossing과는 구분한다.
+
+전통적인 4성부 쓰기에서는 성부 독립성과 가독성을 위해 Crossing/Overlap을 제한하는 경우가 많지만, 현대 제작에서는 Layer/Texture 목적에 따라 의도적으로 사용할 수 있다.
 
 핵심은 `금지 규칙`이 아니라 **성부의 정체성과 Register가 왜 흐려지는지**를 듣는 것이다.
 
 ## 7. Parallel 5th / Octave를 어떻게 이해할 것인가
-전통 대위법과 Common-Practice harmony에서는 완전5도와 옥타브의 병진행을 제한한다. 두 성부가 하나의 선처럼 합쳐져 독립성이 약해질 수 있기 때문이다.
+전통 대위법과 Common-Practice harmony에서는 독립된 두 성부 사이의 연속적인 perfect 5th/octave 병진행을 제한한다. 완전협화음의 동일한 병진행은 성부 독립성을 약하게 만들 수 있기 때문이다.
 
 그러나 Rock의 power chord, synth layer, orchestral doubling처럼 현대 음악에서는 의도적으로 parallel interval을 사용하는 경우가 많다.
 
@@ -125,7 +129,7 @@ C. Bass와 Top Note에 독립적인 line을 설계
 ## 9. Melody와 연결
 Voice Leading은 accompaniment만의 개념이 아니다. Melody가 chord tone/non-chord tone 사이를 이동하는 방식도 넓은 의미에서 linear motion으로 볼 수 있다.
 
-다음 Lesson/Part에서 Passing Tone, Neighbor Tone, Suspension 같은 Non-Chord Tone을 배울 때 `어디서 왔고 어디로 가는가`를 함께 본다.
+Part 04에서 Passing Tone, Neighbor Tone, Suspension 같은 Non-Chord Tone을 배울 때 `어디서 왔고 어디로 가는가`를 함께 본다.
 
 ## 10. Part 17과 연결
 Part 17의 Guide Tone, Shell Voicing, Altered Dominant, Tritone Substitution은 이 Lesson의 확장이다.
@@ -145,6 +149,7 @@ Basic Voice Leading
 - [ ] Common Tone과 Stepwise Motion으로 코드 연결을 만들었다.
 - [ ] Contrary/Similar/Parallel/Oblique Motion을 실제 예에서 구분했다.
 - [ ] Leading Tone과 Chordal 7th의 대표적 해결을 설명한다.
+- [ ] Voice Crossing과 Voice Overlap을 구분한다.
 - [ ] Root-position과 Voice-Led progression을 A/B했다.
 - [ ] Bass와 Top Note를 별도 선율로 분석했다.
 - [ ] 전통 Voice Leading 규칙과 현대 제작의 의도적 예외를 구분한다.
