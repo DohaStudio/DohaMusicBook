@@ -10,6 +10,7 @@
 4. [Lesson 04 — Dynamics와 Stereo Image](lesson-04-dynamics-stereo.md)
 5. [Lesson 05 — Virtual Instrument, Sample, Synth, SoundFont](lesson-05-virtual-instruments-samples-soundfont.md)
 6. [Lesson 06 — Section Arrangement와 DohaStudio 실습](lesson-06-section-arrangement-dohastudio.md)
+7. [Lesson 07 — Sampling, Synthesis, Layering](lesson-07-sampling-synthesis-layering.md)
 
 ## 이 Part에서 익힐 핵심
 
@@ -25,26 +26,28 @@ Dynamics / Stereo Image
 Sound Source
 (Virtual Instrument / Sample / Synth / SoundFont)
     ↓
+Sampling / Chopping / Synthesis
+    ↓
 Section Arrangement Map
     ↓
 Candidate Arrangement Review
 ```
 
-편곡은 악기를 많이 넣는 작업이 아니다. 곡의 목적과 Section 역할에 맞게 **무엇을 넣고, 무엇을 빼고, 어떤 음역과 질감과 공간에 놓을지** 결정하는 작업이다.
+편곡은 악기를 많이 넣는 작업이 아니다. 곡의 목적과 Section 역할에 맞게 무엇을 넣고, 무엇을 빼고, 어떤 음역과 질감과 공간에 놓을지 결정하는 작업이다.
 
 ## 직접 만들 최종 결과
 
-Part 06을 끝낼 때 `study/arrangement/`에 다음 기록을 만들 수 있다.
-
 ```text
-01-instrument-role-map.md
-02-density-layering-analysis.md
-03-register-timbre-notes.md
-04-dynamics-stereo-map.md
-05-sound-source-license-log.md
-06-section-arrangement-plan.md
-07-candidate-arrangement-review.md
-08-product-gap-notes.md
+study/arrangement/
+├─ 01-instrument-role-map.md
+├─ 02-density-layering-analysis.md
+├─ 03-register-timbre-notes.md
+├─ 04-dynamics-stereo-map.md
+├─ 05-sound-source-license-log.md
+├─ 06-section-arrangement-plan.md
+├─ 07-sampling-synthesis-layering.md
+├─ 08-candidate-arrangement-review.md
+└─ 09-product-gap-notes.md
 ```
 
 ## DohaStudio 연결 원칙
@@ -64,5 +67,6 @@ Part 06을 끝낼 때 `study/arrangement/`에 다음 기록을 만들 수 있다
 - Timbre Contrast를 설계한다.
 - Dynamics와 Stereo Image를 편곡 요소로 듣는다.
 - Virtual Instrument/Sample/Synth/SoundFont를 구분한다.
+- Sampling/Chopping/Synthesis를 직접 실습한다.
 - 사용한 음원 소스의 라이선스를 기록한다.
 - AI Candidate의 편곡을 음악 용어로 비교한다.
