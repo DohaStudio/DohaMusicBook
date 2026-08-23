@@ -17,62 +17,38 @@
 
 현재 검수 범위에서 **병합을 막는 P0 수준의 명백한 이론 오류는 남아 있지 않다.**
 
-다만 초안에서 몇 문장이 지나치게 일반화될 수 있어 아래와 같이 수정했다.
+초안에서 지나치게 일반화될 수 있던 문장은 아래와 같이 수정했다.
 
 ## 발견·수정한 사항
 
 ### 1. Voice Leading
-수정 전 위험:
-- Leading Tone / Chordal 7th resolution이 모든 현대 음악에 적용되는 절대 규칙처럼 읽힐 가능성
-- Voice Overlap과 Voice Crossing 정의가 충분히 엄밀하지 않음
-- Parallel 5th/Octave가 현대 제작에서도 단순 금지처럼 오해될 가능성
-
-수정:
-- Common-Practice tonal voice leading의 대표적 tendency로 범위를 명시
-- Voice Crossing과 Voice Overlap을 시간축 기준으로 구분
-- Parallel perfect interval 제한을 독립 성부 문맥과 texture/doubling 문맥으로 분리
+- Leading Tone / Chordal 7th resolution을 Common-Practice tonal voice leading의 대표적 tendency로 한정했다.
+- Voice Crossing과 Voice Overlap을 시간축 기준으로 구분했다.
+- Parallel perfect interval 제한을 독립 성부 문맥과 texture/doubling 문맥으로 분리했다.
 
 ### 2. Phrase / Period / Sentence
-수정 전 위험:
-- `같은 시작 Motif + 4+4`만으로 Period를 정의하는 인상
-- Sentence를 단순 2+2+4 공식으로 암기할 가능성
-
-수정:
-- Period는 Antecedent/Consequent의 cadence-strength 관계가 핵심임을 명시
-- Parallel Period와 Contrasting Period 가능성을 구분
-- Sentence를 Presentation + Continuation의 formal-function 관계로 설명
-- 2+2+4는 대표적 모델이지 필수 길이가 아님을 명시
+- Period는 Antecedent/Consequent의 cadence-strength 관계가 핵심임을 명시했다.
+- Parallel Period와 Contrasting Period 가능성을 구분했다.
+- Sentence를 Presentation + Continuation의 formal-function 관계로 설명했다.
+- 2+2+4는 대표적 모델이지 필수 길이가 아님을 명시했다.
 
 ### 3. Meter / Hemiola
-수정 전 위험:
-- Hemiola가 단순 accent variation과 동일하게 보일 가능성
-
-수정:
-- 대표적인 3:2 metric/accent reinterpretation으로 설명
-- 6/8 또는 두 마디 3/4 등에서 `3+3 ↔ 2+2+2`가 어떻게 들리는지 명시
-- Odd Meter가 언제나 additive meter인 것은 아니라고 한정
+- Hemiola를 대표적인 3:2 metric/accent reinterpretation으로 설명했다.
+- `3+3 ↔ 2+2+2`가 같은 시간 범위에서 어떻게 재조직되는지 명시했다.
+- Odd Meter가 언제나 additive meter인 것은 아니라고 한정했다.
 
 ### 4. Non-Chord Tone
-수정 전 위험:
-- Suspension/Retardation/Appoggiatura/Escape Tone의 전통적 접근·해결 규칙이 지나치게 느슨함
-
-수정:
 - Suspension: preparation → held dissonance → 전형적 step-down resolution
 - Retardation: 전형적 step-up resolution
 - Appoggiatura: 대표적으로 leap approach + step resolution
 - Escape Tone: 대표적으로 step approach + opposite-direction leap
-- 현대 Pop에서는 분류보다 실제 approach/target/resolution 문맥을 우선한다고 별도 명시
+- 현대 Pop에서는 분류 이름보다 실제 approach/target/resolution 문맥을 우선하도록 경계를 두었다.
 
 ### 5. Notation / Enharmonic Spelling
-수정 전 위험:
-- Accidental의 효력 범위가 너무 모호함
-- Enharmonic spelling 예시가 기능 설명에 충분히 직접적이지 않음
-
-수정:
-- Common-Practice staff notation에서 같은 마디/같은 staff position의 효력 범위를 명시
-- Tie/editorial/contemporary convention의 예외 가능성을 남김
-- D major의 C#, Db major의 Db 등 scale-degree/harmonic function 예시 추가
-- Tie와 Slur를 구분
+- Common-Practice staff notation에서 accidental의 일반적인 마디 내 효력 범위를 명시했다.
+- Tie/editorial/contemporary convention의 예외 가능성을 남겼다.
+- Scale-degree/harmonic function 중심 enharmonic 예시를 추가했다.
+- Tie와 Slur를 구분했다.
 
 ## 검수 결과 — 추가 수정 없이 통과
 
@@ -121,6 +97,7 @@
 [x] Notation/Enharmonic high-risk definitions corrected
 [x] Audio Physics terminology reviewed
 [x] Ear Training sequence reviewed
-[ ] README/navigation final check
+[x] README/navigation final check
+[x] main behind = 0
 [ ] final HEAD mergeability recheck
 ```
