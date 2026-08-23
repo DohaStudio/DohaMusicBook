@@ -146,7 +146,19 @@ variation-voicing.mid
 variation-transpose-plus3.mid
 ```
 
-README의 오래된 `prog-001/README.md`, `variation-tempo.mid`, `variation-groove.mid` 예시를 실제 현재 구조에 맞게 수정했다. Starter Set 8개는 study sheet ID와 MIDI folder ID가 일치한다.
+검수 중 Basic Minor~Cinematic의 MIDI folder가 모두 `prog-001/`로 남아 있어 study sheet ID와 불일치하는 것을 발견했다. MIDI blob 자체는 변경하지 않고 Git tree 경로만 다음처럼 수정했다.
+
+```text
+02-basic-minor/prog-001 → prog-002
+03-pop/prog-001         → prog-003
+04-ballad/prog-001      → prog-004
+05-rnb/prog-001         → prog-005
+06-rock/prog-001        → prog-006
+07-dance/prog-001       → prog-007
+08-cinematic/prog-001   → prog-008
+```
+
+README의 오래된 `prog-001/README.md`, `variation-tempo.mid`, `variation-groove.mid` 예시도 실제 현재 구조에 맞게 수정했다. 현재 Starter Set 8개는 study sheet ID와 MIDI folder ID가 일치한다.
 
 ### Rights / Release boundary review
 
@@ -188,7 +200,7 @@ Part 16에서 권리 자체를 새로 판정하지 않으며, Part 10에서 `UNK
 ### 추가 검수가 필요한 항목
 
 - [x] 전체 변경 범위의 README/Study Map/Starter Set Markdown navigation 확인
-- [x] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인
+- [x] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인 및 실제 folder ID 수정
 - [x] 57개 MIDI(original/variation/ear-training)의 생성/parse/readability 검증
 - [x] 각 MIDI의 note content와 문서 chord/harmonic intent 대조 및 발견된 불일치 수정
 - [x] 기본 화성학 용어의 한글/영문 표기 일관성 검수
