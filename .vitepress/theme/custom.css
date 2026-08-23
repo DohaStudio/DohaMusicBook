@@ -1,0 +1,96 @@
+:root {
+  --vp-c-brand-1: #7c3aed;
+  --vp-c-brand-2: #6d28d9;
+  --vp-c-brand-3: #5b21b6;
+  --vp-c-brand-soft: rgba(124, 58, 237, 0.12);
+  --vp-font-family-base: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --vp-font-family-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+.dark {
+  --vp-c-brand-1: #a78bfa;
+  --vp-c-brand-2: #8b5cf6;
+  --vp-c-brand-3: #7c3aed;
+  --vp-c-brand-soft: rgba(167, 139, 250, 0.14);
+}
+
+.VPDoc .content-container {
+  max-width: 860px !important;
+}
+
+.vp-doc {
+  font-size: 16px;
+  line-height: 1.82;
+}
+
+.vp-doc h1 {
+  letter-spacing: -0.035em;
+  line-height: 1.25;
+}
+
+.vp-doc h2 {
+  margin-top: 2.6rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--vp-c-divider);
+  letter-spacing: -0.025em;
+}
+
+.vp-doc h3 {
+  letter-spacing: -0.018em;
+}
+
+.vp-doc p,
+.vp-doc li {
+  word-break: keep-all;
+}
+
+.vp-doc blockquote {
+  border-left-width: 3px;
+  border-left-color: var(--vp-c-brand-1);
+  background: var(--vp-c-brand-soft);
+  padding: 0.9rem 1rem;
+  border-radius: 0 10px 10px 0;
+}
+
+.vp-doc blockquote > p {
+  color: var(--vp-c-text-1);
+}
+
+.vp-doc code:not(pre code) {
+  font-size: 0.88em;
+  padding: 0.16em 0.38em;
+  border-radius: 5px;
+}
+
+.vp-doc table {
+  display: table;
+  width: 100%;
+}
+
+.VPSidebarItem .text {
+  line-height: 1.45;
+}
+
+.VPHomeHero .name,
+.VPHomeHero .text {
+  letter-spacing: -0.04em;
+}
+
+.VPFeature {
+  border-radius: 16px !important;
+}
+
+@media (max-width: 767px) {
+  .vp-doc {
+    font-size: 15.5px;
+    line-height: 1.75;
+  }
+
+  .vp-doc h1 {
+    font-size: 30px;
+  }
+
+  .vp-doc h2 {
+    font-size: 24px;
+  }
+}
