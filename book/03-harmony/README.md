@@ -1,6 +1,6 @@
 # Part 03 — Harmony: 코드로 긴장과 해결을 설계한다
 
-> 학습 목표: 코드 이름을 외우는 데서 끝나지 않고 Key, Scale, Interval, Chord Quality, 기능화성, Harmonic Rhythm, Cadence, Reharmonization을 실제 곡의 감정 흐름과 연결한다.
+> 학습 목표: 코드 이름을 외우는 데서 끝나지 않고 Key, Scale, Interval, Chord Quality, 기능화성, Harmonic Rhythm, Reharmonization, Tonality/Mode를 실제 곡의 감정 흐름과 연결한다.
 
 ## 공부 순서
 
@@ -18,9 +18,11 @@
 ## 이 Part에서 익힐 핵심
 
 ```text
-Key / Scale / Interval
+Key / Scale
    ↓
-Triad / Seventh Chord Quality
+Interval / Scale Gravity
+   ↓
+Triad / 7th Chord Quality
    ↓
 Diatonic Chord
    ↓
@@ -30,11 +32,13 @@ Chord Progression
    ↓
 Harmonic Rhythm + Bass + Inversion
    ↓
-Reharmonization / Mode
+Reharmonization
+   ↓
+Tonality / Mode / Special Scale
    ↓
 Melody와의 Tension / Resolution
    ↓
-MIDI Variation으로 직접 듣기
+MIDI Variation + Ear Training
    ↓
 Candidate Harmony Review
 ```
@@ -47,25 +51,30 @@ Candidate Harmony Review
 
 한 Progression마다 Tempo, Velocity, Duration, Rhythm, Voicing/Inversion, Transpose, Timbre를 바꾸어 같은 Harmony가 어떻게 다른 음악적 결과를 만드는지 비교한다.
 
-기본 화성의 귀 훈련은 [`examples/harmony-ear-training/`](../../examples/harmony-ear-training/README.md)의 Cadence와 ii–V–I 예제로 이어간다.
+## Harmony Ear Training Library
+
+기본 이론을 읽은 뒤 [`examples/harmony-ear-training/`](../../examples/harmony-ear-training/README.md)에서 Cadence, Major/Minor ii–V–I, Guide Tone/Shell Voicing, Tritone Substitution, Altered Dominant, Aeolian/Dorian 비교를 실제 MIDI로 듣는다.
+
+분석 순서는 `먼저 듣기 → 예상 기록 → Piano Roll/Chord 확인 → 다시 듣기`를 유지한다.
 
 ## 직접 만들 최종 결과
 
+Part 03을 끝낼 때 `study/harmony/`에 다음 기록을 만들 수 있다.
+
 ```text
-study/harmony/
-├─ 01-key-scale-analysis.md
-├─ 02-diatonic-chord-practice.md
-├─ 03-function-progression.md
-├─ 04-harmonic-rhythm-inversion.md
-├─ 05-reharmonization-comparison.md
-├─ 06-melody-harmony-notes.md
-├─ 07-midi-progression-variations.md
-├─ 08-ear-harmony-review.md
-├─ 09-modes-tonality.md
-├─ 10-chord-quality-cadence.md
-├─ 11-candidate-harmony-review.md
-└─ 12-product-gap-notes.md
+01-key-scale-analysis.md
+02-diatonic-chord-practice.md
+03-function-progression.md
+04-harmonic-rhythm-inversion.md
+05-reharmonization-comparison.md
+06-melody-harmony-notes.md
+07-midi-progression-variations.md
+08-ear-training-review.md
+09-candidate-harmony-review.md
+10-product-gap-notes.md
 ```
+
+실제 학습 기록은 정답지가 아니다. 틀린 채보도 나중에 다시 듣고 수정한 과정을 남기는 것이 중요하다.
 
 ## DohaStudio 연결 원칙
 
@@ -78,14 +87,15 @@ study/harmony/
 ## Part 03 완료 기준
 
 - Key와 Scale을 구분한다.
-- 기본 Interval과 Triad/7th Chord Quality를 구성한다.
+- Interval과 Scale Degree의 긴장/안정을 귀로 비교한다.
+- Triad/7th Chord Quality를 직접 구성한다.
 - Diatonic Chord를 직접 만든다.
 - Tonic/Predominant/Dominant를 진행 안에서 듣는다.
-- Cadence의 종류와 해결감을 구분한다.
+- 기본 Cadence를 구분한다.
 - Harmonic Rhythm을 Tempo와 구분한다.
 - Inversion으로 Bass movement를 바꾼다.
 - Secondary Dominant와 Modal Interchange를 최소 한 번 적용한다.
-- Tonality/Mode의 중심과 Characteristic Tone을 설명한다.
+- Tonality와 Mode의 차이를 설명한다.
 - Melody와 Harmony의 긴장/해결을 설명한다.
 - 같은 코드 진행을 MIDI에서 여러 방식으로 변형해 비교한다.
 - AI Candidate의 화성을 음악 용어로 비교한다.
