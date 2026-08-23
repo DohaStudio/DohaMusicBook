@@ -1,6 +1,6 @@
 # PR #2 Review — Theory, MIDI Labs, Production, Release, Jazz Harmony
 
-> 상태: Draft 유지. 구조 정리를 끝내고 내용/정합성 검수 단계로 전환한다.
+> 상태: 검수 완료. final HEAD mergeability 확인 후 Draft 해제 단계로 전환한다.
 
 ## 1. 현재 범위
 
@@ -237,7 +237,7 @@ Part 16에서 권리 자체를 새로 판정하지 않으며, Part 10에서 `UNK
 
 ## 5. Merge Gate
 
-다음 조건을 만족할 때 Draft 해제를 검토한다.
+다음 조건을 모두 만족했다.
 
 ```text
 [x] P0 findings = 0
@@ -247,7 +247,7 @@ Part 16에서 권리 자체를 새로 판정하지 않으며, Part 10에서 `UNK
 [x] CURRENT/FOUNDATION/TARGET checked
 [x] rights/provenance checked
 [x] main behind = 0
-[ ] GitHub mergeability rechecked on final head
+[x] GitHub mergeability rechecked on final head (`mergeable=true`)
 ```
 
-현재 문서/콘텐츠 검수 기준으로 P0 finding은 0이다. 마지막 단계는 final HEAD에서 GitHub mergeability와 CI/status를 다시 확인하는 것이다.
+final HEAD에서 GitHub mergeability가 `true`로 확인되었다. 콘텐츠/구조 검수 Gate는 통과했으며 PR을 Ready for review로 전환할 수 있다.
