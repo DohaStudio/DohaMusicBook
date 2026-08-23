@@ -10,6 +10,8 @@
 4. [Lesson 04 — Groove와 파트 간 상호작용](04-groove-interaction.md)
 5. [Lesson 05 — Rhythm Pattern과 Section Energy](05-pattern-section-energy.md)
 6. [Lesson 06 — DohaStudio로 Rhythm 공부하기](06-dohastudio-rhythm-study.md)
+7. [Lesson 07 — Drum Beatmaking](07-drum-beatmaking.md)
+8. [Lesson 08 — Pulse, Subdivision, Polyrhythm을 귀로 듣기](08-polyrhythm-listening.md)
 
 ---
 
@@ -20,15 +22,12 @@
 ## 2. Beat, Tempo, Meter
 
 ### Beat
-
 곡 안에서 반복해서 느껴지는 기본 박이다.
 
 ### Tempo
-
 Beat가 얼마나 빠르게 진행되는지 나타내는 속도이며 보통 BPM으로 표현한다.
 
 ### Meter
-
 Beat가 어떤 묶음으로 반복되는지 나타낸다. 4/4, 3/4, 6/8 등이 대표적이다.
 
 같은 120 BPM이라도 4/4 스트레이트와 6/8 느낌은 전혀 다르게 들릴 수 있다.
@@ -112,16 +111,14 @@ Version B: Syncopated
 Version C: Shuffle/Swing
 ```
 
-멜로디 음높이는 같게 유지하고 무엇이 달라지는지 기록한다.
+멜로디 음높이는 같게 유지하고 무엇이 달라지는지 기록한다. 이후 Lesson 07에서 Drum Pattern을 직접 만들고 Lesson 08에서 polyrhythmic grouping까지 확장한다.
 
 ## 11. DohaStudio와 연결
 
 ### CURRENT
-
-현재 DohaMusic은 WAV playback과 Timeline 확인이 가능하므로 생성된 곡의 실제 시간 흐름을 들으며 BPM과 Section별 리듬 밀도를 분석하는 용도로 사용할 수 있다. K-POP Structured Options와 Tempo/Hook 분석 기반도 존재하지만, 이를 완전한 MIDI 리듬 편집기로 오해하지 않는다.
+현재 DohaMusic은 WAV playback과 Timeline 확인이 가능하므로 생성된 곡의 실제 시간 흐름을 들으며 BPM과 Section별 리듬 밀도를 분석하는 용도로 사용할 수 있다. 이를 완전한 MIDI 리듬 편집기로 오해하지 않는다.
 
 ### TARGET
-
 향후 MIDI Track/Piano Roll이 구현되면 다음 정보가 직접 편집 대상이 될 수 있다.
 
 ```text
@@ -145,13 +142,6 @@ Humanization
 4. Kick, Snare, Hi-hat, Bass, Vocal의 시작 위치를 귀로 적는다.
 5. 더 Groove가 좋다고 느끼는 버전을 고르고 이유를 음악 용어로 적는다.
 
-```text
-Candidate A: Kick pattern stable, vocal too square
-Candidate B: Bass enters off-beat, stronger forward motion
-Choice: B
-Reason: stronger syncopation and section lift
-```
-
 ## 13. Part 02 최종 산출물
 
 ```text
@@ -161,7 +151,9 @@ Reason: stronger syncopation and section lift
 04-groove-part-interaction.md
 05-section-rhythm-map.md
 06-candidate-rhythm-review.md
-07-product-gap-notes.md
+07-drum-beatmaking.md
+08-polyrhythm-listening.md
+09-product-gap-notes.md
 ```
 
 ## 14. 이 Part를 끝냈다면
@@ -170,6 +162,7 @@ Reason: stronger syncopation and section lift
 - Straight와 Swing/Shuffle 차이를 들을 수 있다.
 - Syncopation과 Pickup을 찾아낼 수 있다.
 - Kick/Bass/Hi-hat/Vocal의 상호작용을 따로 들을 수 있다.
+- 직접 Drum Pattern을 만들고 발전시킬 수 있다.
+- Subdivision과 Polyrhythm을 귀로 분리해서 들을 수 있다.
 - Section별 Rhythm density 변화를 분석할 수 있다.
-- 생성 결과를 '좋다/별로다'가 아니라 Rhythm 관점으로 평가할 수 있다.
-- 음악적 문제를 DohaStudio의 향후 편집 요구사항으로 바꿔 기록할 수 있다.
+- 생성 결과를 Rhythm 관점으로 평가할 수 있다.
