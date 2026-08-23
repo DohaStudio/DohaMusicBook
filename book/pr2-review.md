@@ -127,6 +127,49 @@ Part 17
 
 Part 03에서 Part 17의 관련 Lesson으로 직접 연결해 같은 설명을 반복하기보다 `기초 → 심화` 관계가 보이도록 정리했다.
 
+### Progression naming review
+
+Starter progression의 study sheet와 MIDI folder는 같은 `prog-00N` ID를 공유하도록 규칙을 고정했다.
+
+```text
+<category>/prog-00N-<roman-slug>.md   # study sheet
+<category>/prog-00N/                  # MIDI folder
+```
+
+MIDI starter variation 이름은 다음을 기본값으로 사용한다.
+
+```text
+original.mid
+variation-rhythm.mid
+variation-velocity.mid
+variation-voicing.mid
+variation-transpose-plus3.mid
+```
+
+README의 오래된 `prog-001/README.md`, `variation-tempo.mid`, `variation-groove.mid` 예시를 실제 현재 구조에 맞게 수정했다. Starter Set 8개는 study sheet ID와 MIDI folder ID가 일치한다.
+
+### Rights / Release boundary review
+
+Part 10과 Part 16은 다음 책임으로 분리한다.
+
+```text
+Part 10 Rights
+- Copyright / Ownership / License 구분
+- Sample / SoundFont / Plugin / Dataset / Model / Voice 권리
+- License / consent evidence
+- Artifact lineage / similarity review
+- UNKNOWN / BLOCKED 판단
+
+Part 16 Release & Distribution
+- Part 10 evidence 소비
+- Credits / metadata / master / artwork 확인
+- Distributor / DSP delivery
+- Reporting / revenue flow
+- Release ready / blocked 결정
+```
+
+Part 16에서 권리 자체를 새로 판정하지 않으며, Part 10에서 `UNKNOWN/BLOCKED`인 항목을 임의로 허용하지 않는다고 명시했다. 따라서 현재 범위에서 Part 10과 Part 16 사이의 rights/provenance 모순은 발견되지 않았다.
+
 ### CURRENT / FOUNDATION / TARGET review
 
 2026-08-23 기준 DohaMusic, DohaLM, DohaAudio, DohaVocal의 `develop` README와 authority를 대조했다. 상세 기록은 [`current-foundation-target-validation.md`](current-foundation-target-validation.md)에 남겼다.
@@ -145,13 +188,13 @@ Part 03에서 Part 17의 관련 Lesson으로 직접 연결해 같은 설명을 �
 ### 추가 검수가 필요한 항목
 
 - [x] 전체 변경 범위의 README/Study Map/Starter Set Markdown navigation 확인
-- [ ] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인
+- [x] Starter progression study-sheet naming과 MIDI folder naming 규칙 확인
 - [x] 57개 MIDI(original/variation/ear-training)의 생성/parse/readability 검증
 - [x] 각 MIDI의 note content와 문서 chord/harmonic intent 대조 및 발견된 불일치 수정
 - [x] 기본 화성학 용어의 한글/영문 표기 일관성 검수
 - [x] Jazz Harmony의 chord-scale / altered tension 핵심 설명 정확성 spot-check
 - [x] Part 03과 Part 17의 중복 범위를 최소화
-- [ ] Part 16의 Rights 설명이 Part 10과 충돌하지 않는지 검수
+- [x] Part 16의 Rights 설명이 Part 10과 충돌하지 않는지 검수
 - [x] CURRENT / FOUNDATION / TARGET 문장을 최신 DohaStudio source와 대조
 
 ## 4. 내용 검수 우선순위
@@ -185,14 +228,14 @@ Part 03에서 Part 17의 관련 Lesson으로 직접 연결해 같은 설명을 �
 다음 조건을 만족할 때 Draft 해제를 검토한다.
 
 ```text
-[ ] P0 findings = 0
+[x] P0 findings = 0
 [x] navigation checked
 [x] MIDI checked
 [x] theory spot-check passed
 [x] CURRENT/FOUNDATION/TARGET checked
-[ ] rights/provenance checked
+[x] rights/provenance checked
 [x] main behind = 0
 [ ] GitHub mergeability rechecked on final head
 ```
 
-PR #2는 새 이론을 계속 추가하는 단계에서 벗어나 이제 이 Gate를 통과시키는 검수 단계로 관리한다.
+현재 문서/콘텐츠 검수 기준으로 P0 finding은 0이다. 마지막 단계는 final HEAD에서 GitHub mergeability와 CI/status를 다시 확인하는 것이다.
