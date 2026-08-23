@@ -1,6 +1,6 @@
 # Part 06 — Arrangement & Sound: 같은 곡을 다른 세계로 만든다
 
-> 학습 목표: 작곡을 Melody+Chord로만 보지 않고 Instrument Role, Density, Register, Timbre, Dynamics, Stereo Image까지 포함한 전체 사운드 설계로 이해한다.
+> 학습 목표: 작곡을 Melody+Chord로만 보지 않고 Instrument Role, Range, Density, Register, Timbre, Dynamics, Stereo Image까지 포함한 전체 사운드 설계로 이해한다.
 
 ## 공부 순서
 
@@ -11,29 +11,32 @@
 5. [Lesson 05 — Virtual Instrument, Sample, Synth, SoundFont](lesson-05-virtual-instruments-samples-soundfont.md)
 6. [Lesson 06 — Section Arrangement와 DohaStudio 실습](lesson-06-section-arrangement-dohastudio.md)
 7. [Lesson 07 — Sampling, Synthesis, Layering](lesson-07-sampling-synthesis-layering.md)
+8. [Lesson 08 — Instrument Range & Idiomatic Writing](lesson-08-instrument-range-idiomatic-writing.md)
 
 ## 이 Part에서 익힐 핵심
 
 ```text
 Instrument Role
     ↓
+Range / Register / Articulation
+    ↓
 Density / Layering
     ↓
-Register / Timbre
-    ↓
-Dynamics / Stereo Image
+Timbre / Dynamics / Stereo Image
     ↓
 Sound Source
 (Virtual Instrument / Sample / Synth / SoundFont)
     ↓
 Sampling / Chopping / Synthesis
     ↓
+Voicing / Spacing / Doubling
+    ↓
 Section Arrangement Map
     ↓
 Candidate Arrangement Review
 ```
 
-편곡은 악기를 많이 넣는 작업이 아니다. 곡의 목적과 Section 역할에 맞게 무엇을 넣고, 무엇을 빼고, 어떤 음역과 질감과 공간에 놓을지 결정하는 작업이다.
+편곡은 악기를 많이 넣는 작업이 아니다. 곡의 목적과 Section 역할에 맞게 무엇을 넣고, 무엇을 빼고, 어떤 음역·연주법·질감·공간에 놓을지 결정하는 작업이다.
 
 ## 직접 만들 최종 결과
 
@@ -46,8 +49,9 @@ study/arrangement/
 ├─ 05-sound-source-license-log.md
 ├─ 06-section-arrangement-plan.md
 ├─ 07-sampling-synthesis-layering.md
-├─ 08-candidate-arrangement-review.md
-└─ 09-product-gap-notes.md
+├─ 08-instrument-range-voicing.md
+├─ 09-candidate-arrangement-review.md
+└─ 10-product-gap-notes.md
 ```
 
 ## DohaStudio 연결 원칙
@@ -56,17 +60,19 @@ study/arrangement/
 현재 DohaMusic은 Project/Composition/Artifact, 읽기 전용 Track lane, WAV playback/timeline을 이용해 생성 결과를 듣고 Section별 역할과 밀도를 분석하는 데 활용한다.
 
 ### TARGET
-완성형 Track/Clip 편집, Mixer, Automation, MIDI/Piano Roll, SoundFont engine, Production Stem Separation은 현재 사용 가능한 기능처럼 설명하지 않는다. 향후 `Track.role`, `instrument`, `register`, `timbre`, `Clip.start/end`, `gain`, `pan`, `Section.density`, `Automation` 등의 정보가 편곡 도메인과 연결될 수 있다.
+완성형 Track/Clip 편집, Mixer, Automation, MIDI/Piano Roll, SoundFont engine, Production Stem Separation은 현재 사용 가능한 기능처럼 설명하지 않는다. 향후 `Track.role`, `instrument`, `register`, `articulation`, `Clip.start/end`, `gain`, `pan`, `Section.density`, `Automation` 등의 정보가 편곡 도메인과 연결될 수 있다.
 
 ## Part 06 완료 기준
 
 - 악기를 이름보다 역할로 분류한다.
+- Range와 Register를 구분한다.
 - Section별 Density 변화를 설명한다.
-- Layering의 목적을 설명한다.
+- Layering과 Doubling의 목적을 설명한다.
 - Register 충돌을 찾는다.
 - Timbre Contrast를 설계한다.
 - Dynamics와 Stereo Image를 편곡 요소로 듣는다.
 - Virtual Instrument/Sample/Synth/SoundFont를 구분한다.
 - Sampling/Chopping/Synthesis를 직접 실습한다.
+- Keyboard voicing과 실제 악기 idiomatic writing의 차이를 확인한다.
 - 사용한 음원 소스의 라이선스를 기록한다.
 - AI Candidate의 편곡을 음악 용어로 비교한다.
